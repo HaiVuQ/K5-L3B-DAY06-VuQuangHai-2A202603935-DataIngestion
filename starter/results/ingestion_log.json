@@ -1,0 +1,492 @@
+[
+  {
+    "document_id": "gooaq-2021",
+    "source": "data/raw/gooaq_2021.pdf",
+    "page": 1,
+    "raw_char_count": 4248,
+    "normalized_char_count": 4208,
+    "control_char_count": 0,
+    "status": "included",
+    "notes": ""
+  },
+  {
+    "document_id": "gooaq-2021",
+    "source": "data/raw/gooaq_2021.pdf",
+    "page": 2,
+    "raw_char_count": 5134,
+    "normalized_char_count": 5111,
+    "control_char_count": 0,
+    "status": "included",
+    "notes": ""
+  },
+  {
+    "document_id": "gooaq-2021",
+    "source": "data/raw/gooaq_2021.pdf",
+    "page": 3,
+    "raw_char_count": 4717,
+    "normalized_char_count": 4685,
+    "control_char_count": 0,
+    "status": "included",
+    "notes": ""
+  },
+  {
+    "document_id": "gooaq-2021",
+    "source": "data/raw/gooaq_2021.pdf",
+    "page": 4,
+    "raw_char_count": 4148,
+    "normalized_char_count": 4115,
+    "control_char_count": 4,
+    "status": "included",
+    "notes": ""
+  },
+  {
+    "document_id": "gooaq-2021",
+    "source": "data/raw/gooaq_2021.pdf",
+    "page": 5,
+    "raw_char_count": 4295,
+    "normalized_char_count": 4270,
+    "control_char_count": 0,
+    "status": "included",
+    "notes": ""
+  },
+  {
+    "document_id": "gooaq-2021",
+    "source": "data/raw/gooaq_2021.pdf",
+    "page": 6,
+    "raw_char_count": 3842,
+    "normalized_char_count": 3719,
+    "control_char_count": 89,
+    "status": "included",
+    "notes": "Removed 89 non-printable PDF figure/font control characters; body text retained."
+  },
+  {
+    "document_id": "gooaq-2021",
+    "source": "data/raw/gooaq_2021.pdf",
+    "page": 7,
+    "raw_char_count": 4636,
+    "normalized_char_count": 4599,
+    "control_char_count": 0,
+    "status": "included",
+    "notes": ""
+  },
+  {
+    "document_id": "gooaq-2021",
+    "source": "data/raw/gooaq_2021.pdf",
+    "page": 8,
+    "raw_char_count": 4232,
+    "normalized_char_count": 4196,
+    "control_char_count": 0,
+    "status": "included",
+    "notes": ""
+  },
+  {
+    "document_id": "gooaq-2021",
+    "source": "data/raw/gooaq_2021.pdf",
+    "page": 9,
+    "raw_char_count": 4454,
+    "normalized_char_count": 4426,
+    "control_char_count": 0,
+    "status": "included",
+    "notes": ""
+  },
+  {
+    "document_id": "gooaq-2021",
+    "source": "data/raw/gooaq_2021.pdf",
+    "page": 10,
+    "raw_char_count": 2693,
+    "normalized_char_count": 2666,
+    "control_char_count": 0,
+    "status": "excluded_non_content",
+    "notes": "References-only page (bibliographic entries only)"
+  },
+  {
+    "document_id": "gooaq-2021",
+    "source": "data/raw/gooaq_2021.pdf",
+    "page": 11,
+    "raw_char_count": 3150,
+    "normalized_char_count": 3141,
+    "control_char_count": 0,
+    "status": "included",
+    "notes": ""
+  },
+  {
+    "document_id": "gooaq-2021",
+    "source": "data/raw/gooaq_2021.pdf",
+    "page": 12,
+    "raw_char_count": 2954,
+    "normalized_char_count": 2936,
+    "control_char_count": 0,
+    "status": "included",
+    "notes": ""
+  },
+  {
+    "document_id": "gooaq-2021",
+    "source": "data/raw/gooaq_2021.pdf",
+    "page": 13,
+    "raw_char_count": 5243,
+    "normalized_char_count": 5243,
+    "control_char_count": 0,
+    "status": "included",
+    "notes": ""
+  },
+  {
+    "document_id": "paq-2021",
+    "source": "data/raw/paq_2021.pdf",
+    "page": 1,
+    "raw_char_count": 4060,
+    "normalized_char_count": 4015,
+    "control_char_count": 0,
+    "status": "included",
+    "notes": ""
+  },
+  {
+    "document_id": "paq-2021",
+    "source": "data/raw/paq_2021.pdf",
+    "page": 2,
+    "raw_char_count": 4700,
+    "normalized_char_count": 4667,
+    "control_char_count": 0,
+    "status": "included",
+    "notes": ""
+  },
+  {
+    "document_id": "paq-2021",
+    "source": "data/raw/paq_2021.pdf",
+    "page": 3,
+    "raw_char_count": 3902,
+    "normalized_char_count": 3804,
+    "control_char_count": 67,
+    "status": "included",
+    "notes": "Removed 67 non-printable PDF figure/font control characters; body text retained."
+  },
+  {
+    "document_id": "paq-2021",
+    "source": "data/raw/paq_2021.pdf",
+    "page": 4,
+    "raw_char_count": 4631,
+    "normalized_char_count": 4600,
+    "control_char_count": 0,
+    "status": "included",
+    "notes": ""
+  },
+  {
+    "document_id": "paq-2021",
+    "source": "data/raw/paq_2021.pdf",
+    "page": 5,
+    "raw_char_count": 4789,
+    "normalized_char_count": 4757,
+    "control_char_count": 0,
+    "status": "included",
+    "notes": ""
+  },
+  {
+    "document_id": "paq-2021",
+    "source": "data/raw/paq_2021.pdf",
+    "page": 6,
+    "raw_char_count": 4685,
+    "normalized_char_count": 4657,
+    "control_char_count": 0,
+    "status": "included",
+    "notes": ""
+  },
+  {
+    "document_id": "paq-2021",
+    "source": "data/raw/paq_2021.pdf",
+    "page": 7,
+    "raw_char_count": 3669,
+    "normalized_char_count": 3659,
+    "control_char_count": 3,
+    "status": "included",
+    "notes": ""
+  },
+  {
+    "document_id": "paq-2021",
+    "source": "data/raw/paq_2021.pdf",
+    "page": 8,
+    "raw_char_count": 3814,
+    "normalized_char_count": 3803,
+    "control_char_count": 0,
+    "status": "included",
+    "notes": ""
+  },
+  {
+    "document_id": "paq-2021",
+    "source": "data/raw/paq_2021.pdf",
+    "page": 9,
+    "raw_char_count": 4966,
+    "normalized_char_count": 4948,
+    "control_char_count": 12,
+    "status": "included",
+    "notes": "Removed 12 non-printable PDF figure/font control characters; body text retained."
+  },
+  {
+    "document_id": "paq-2021",
+    "source": "data/raw/paq_2021.pdf",
+    "page": 10,
+    "raw_char_count": 4676,
+    "normalized_char_count": 4642,
+    "control_char_count": 0,
+    "status": "included",
+    "notes": ""
+  },
+  {
+    "document_id": "paq-2021",
+    "source": "data/raw/paq_2021.pdf",
+    "page": 11,
+    "raw_char_count": 4668,
+    "normalized_char_count": 4615,
+    "control_char_count": 0,
+    "status": "included",
+    "notes": ""
+  },
+  {
+    "document_id": "paq-2021",
+    "source": "data/raw/paq_2021.pdf",
+    "page": 12,
+    "raw_char_count": 4956,
+    "normalized_char_count": 4909,
+    "control_char_count": 0,
+    "status": "excluded_non_content",
+    "notes": "References-only page"
+  },
+  {
+    "document_id": "paq-2021",
+    "source": "data/raw/paq_2021.pdf",
+    "page": 13,
+    "raw_char_count": 5002,
+    "normalized_char_count": 4953,
+    "control_char_count": 0,
+    "status": "excluded_non_content",
+    "notes": "References-only page"
+  },
+  {
+    "document_id": "paq-2021",
+    "source": "data/raw/paq_2021.pdf",
+    "page": 14,
+    "raw_char_count": 2555,
+    "normalized_char_count": 2525,
+    "control_char_count": 0,
+    "status": "excluded_non_content",
+    "notes": "References-only page"
+  },
+  {
+    "document_id": "paq-2021",
+    "source": "data/raw/paq_2021.pdf",
+    "page": 15,
+    "raw_char_count": 4115,
+    "normalized_char_count": 4093,
+    "control_char_count": 0,
+    "status": "included",
+    "notes": ""
+  },
+  {
+    "document_id": "paq-2021",
+    "source": "data/raw/paq_2021.pdf",
+    "page": 16,
+    "raw_char_count": 3952,
+    "normalized_char_count": 3930,
+    "control_char_count": 0,
+    "status": "included",
+    "notes": ""
+  },
+  {
+    "document_id": "reddit-2019",
+    "source": "data/raw/reddit_2019.pdf",
+    "page": 1,
+    "raw_char_count": 4267,
+    "normalized_char_count": 4229,
+    "control_char_count": 0,
+    "status": "included",
+    "notes": ""
+  },
+  {
+    "document_id": "reddit-2019",
+    "source": "data/raw/reddit_2019.pdf",
+    "page": 2,
+    "raw_char_count": 4457,
+    "normalized_char_count": 4427,
+    "control_char_count": 0,
+    "status": "included",
+    "notes": ""
+  },
+  {
+    "document_id": "reddit-2019",
+    "source": "data/raw/reddit_2019.pdf",
+    "page": 3,
+    "raw_char_count": 4147,
+    "normalized_char_count": 4131,
+    "control_char_count": 0,
+    "status": "included",
+    "notes": ""
+  },
+  {
+    "document_id": "reddit-2019",
+    "source": "data/raw/reddit_2019.pdf",
+    "page": 4,
+    "raw_char_count": 4674,
+    "normalized_char_count": 4638,
+    "control_char_count": 0,
+    "status": "included",
+    "notes": ""
+  },
+  {
+    "document_id": "reddit-2019",
+    "source": "data/raw/reddit_2019.pdf",
+    "page": 5,
+    "raw_char_count": 3913,
+    "normalized_char_count": 3894,
+    "control_char_count": 0,
+    "status": "included",
+    "notes": ""
+  },
+  {
+    "document_id": "reddit-2019",
+    "source": "data/raw/reddit_2019.pdf",
+    "page": 6,
+    "raw_char_count": 3089,
+    "normalized_char_count": 3064,
+    "control_char_count": 0,
+    "status": "included",
+    "notes": ""
+  },
+  {
+    "document_id": "reddit-2019",
+    "source": "data/raw/reddit_2019.pdf",
+    "page": 7,
+    "raw_char_count": 4591,
+    "normalized_char_count": 4556,
+    "control_char_count": 0,
+    "status": "excluded_non_content",
+    "notes": "References-only page"
+  },
+  {
+    "document_id": "reddit-2019",
+    "source": "data/raw/reddit_2019.pdf",
+    "page": 8,
+    "raw_char_count": 4767,
+    "normalized_char_count": 4714,
+    "control_char_count": 0,
+    "status": "excluded_non_content",
+    "notes": "References-only page"
+  },
+  {
+    "document_id": "reddit-2019",
+    "source": "data/raw/reddit_2019.pdf",
+    "page": 9,
+    "raw_char_count": 945,
+    "normalized_char_count": 931,
+    "control_char_count": 0,
+    "status": "excluded_non_content",
+    "notes": "References-only page"
+  },
+  {
+    "document_id": "reddit-2019",
+    "source": "data/raw/reddit_2019.pdf",
+    "page": 10,
+    "raw_char_count": 1492,
+    "normalized_char_count": 1495,
+    "control_char_count": 0,
+    "status": "included",
+    "notes": ""
+  },
+  {
+    "document_id": "searchqa-2017",
+    "source": "data/raw/searchqa_2017.pdf",
+    "page": 1,
+    "raw_char_count": 3786,
+    "normalized_char_count": 3754,
+    "control_char_count": 0,
+    "status": "included",
+    "notes": ""
+  },
+  {
+    "document_id": "searchqa-2017",
+    "source": "data/raw/searchqa_2017.pdf",
+    "page": 2,
+    "raw_char_count": 4256,
+    "normalized_char_count": 4219,
+    "control_char_count": 0,
+    "status": "included",
+    "notes": ""
+  },
+  {
+    "document_id": "searchqa-2017",
+    "source": "data/raw/searchqa_2017.pdf",
+    "page": 3,
+    "raw_char_count": 4476,
+    "normalized_char_count": 4424,
+    "control_char_count": 0,
+    "status": "included",
+    "notes": ""
+  },
+  {
+    "document_id": "searchqa-2017",
+    "source": "data/raw/searchqa_2017.pdf",
+    "page": 4,
+    "raw_char_count": 4483,
+    "normalized_char_count": 4445,
+    "control_char_count": 0,
+    "status": "included",
+    "notes": ""
+  },
+  {
+    "document_id": "searchqa-2017",
+    "source": "data/raw/searchqa_2017.pdf",
+    "page": 5,
+    "raw_char_count": 3246,
+    "normalized_char_count": 3216,
+    "control_char_count": 0,
+    "status": "excluded_non_content",
+    "notes": "Primarily References and brief Acknowledgments (<250 chars of conclusion tail)"
+  },
+  {
+    "document_id": "wikihow-2018",
+    "source": "data/raw/wikihow_2018.pdf",
+    "page": 1,
+    "raw_char_count": 3616,
+    "normalized_char_count": 3584,
+    "control_char_count": 0,
+    "status": "included",
+    "notes": ""
+  },
+  {
+    "document_id": "wikihow-2018",
+    "source": "data/raw/wikihow_2018.pdf",
+    "page": 2,
+    "raw_char_count": 4556,
+    "normalized_char_count": 4518,
+    "control_char_count": 0,
+    "status": "included",
+    "notes": ""
+  },
+  {
+    "document_id": "wikihow-2018",
+    "source": "data/raw/wikihow_2018.pdf",
+    "page": 3,
+    "raw_char_count": 5458,
+    "normalized_char_count": 5438,
+    "control_char_count": 0,
+    "status": "included",
+    "notes": ""
+  },
+  {
+    "document_id": "wikihow-2018",
+    "source": "data/raw/wikihow_2018.pdf",
+    "page": 4,
+    "raw_char_count": 4139,
+    "normalized_char_count": 4122,
+    "control_char_count": 0,
+    "status": "included",
+    "notes": ""
+  },
+  {
+    "document_id": "wikihow-2018",
+    "source": "data/raw/wikihow_2018.pdf",
+    "page": 5,
+    "raw_char_count": 3217,
+    "normalized_char_count": 3166,
+    "control_char_count": 0,
+    "status": "excluded_non_content",
+    "notes": "References-only page"
+  }
+]

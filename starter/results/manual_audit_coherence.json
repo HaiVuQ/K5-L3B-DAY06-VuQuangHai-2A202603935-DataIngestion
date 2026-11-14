@@ -1,0 +1,259 @@
+{
+  "criterion": "Chunk Coherence",
+  "scale": "0 = cut mid-thought / missing subject or context; 1 = partially understandable / missing surrounding context or ends abruptly; 2 = self-contained and coherent",
+  "sampling_protocol": "10 fixed midpoint character anchors (coh_01 to coh_10) pre-selected across corpus pages before comparing strategies; evaluated at the exact same page/character position across Strategies A, B, and C.",
+  "summary_by_strategy": {
+    "A": {
+      "sample_count": 10,
+      "score_counts": {
+        "0": 3,
+        "1": 7,
+        "2": 0
+      },
+      "total_score": 7,
+      "average_score_out_of_2": 0.7
+    },
+    "B": {
+      "sample_count": 10,
+      "score_counts": {
+        "0": 0,
+        "1": 3,
+        "2": 7
+      },
+      "total_score": 17,
+      "average_score_out_of_2": 1.7
+    },
+    "C": {
+      "sample_count": 10,
+      "score_counts": {
+        "0": 0,
+        "1": 3,
+        "2": 7
+      },
+      "total_score": 17,
+      "average_score_out_of_2": 1.7
+    }
+  },
+  "samples": [
+    {
+      "sample_id": "coh_01",
+      "page_id": "gooaq-2021:p01",
+      "anchor_midpoint_char": 2104,
+      "scores": {
+        "A": {
+          "chunk_id": "A:gooaq-2021:p01:c005",
+          "score": 1,
+          "rationale": "Starts mid-sentence ('or direct answer QA) has resulted...') without the subject 'Research in open question answering', and ends abruptly after a comma ('mainly short responses and,'). Understandable topic but cut at both boundaries."
+        },
+        "B": {
+          "chunk_id": "B:gooaq-2021:p01:c003",
+          "score": 1,
+          "rationale": "Preserves complete sentences and the '1 Introduction' header, but the final sentence is interrupted by footnote 1 ('retrieved from large corpora or knowledge / 1The dataset is available...')."
+        },
+        "C": {
+          "chunk_id": "C:gooaq-2021:p01:c003",
+          "score": 1,
+          "rationale": "Identical paragraph chunking to Strategy B; preserves paragraph boundaries and section header, slightly interrupted at the end by page-bottom footnote 1."
+        }
+      }
+    },
+    {
+      "sample_id": "coh_02",
+      "page_id": "gooaq-2021:p02",
+      "anchor_midpoint_char": 2555,
+      "scores": {
+        "A": {
+          "chunk_id": "A:gooaq-2021:p02:c006",
+          "score": 1,
+          "rationale": "Starts mid-word ('wer types:') and cuts off mid-word at the end ('because response flu'). The main finding on Q1 is readable, so it scores 1."
+        },
+        "B": {
+          "chunk_id": "B:gooaq-2021:p02:c004",
+          "score": 2,
+          "rationale": "Captures the three research questions (Q1)-(Q3) and the complete explanation of Q1 ('response fluency and coherence have a much higher weight...'), ending cleanly at a colon introducing Q2."
+        },
+        "C": {
+          "chunk_id": "C:gooaq-2021:p02:c004",
+          "score": 2,
+          "rationale": "Identical to Strategy B; self-contained explanation of research questions Q1-Q3 and the T5 pre-training hypothesis."
+        }
+      }
+    },
+    {
+      "sample_id": "coh_03",
+      "page_id": "gooaq-2021:p03",
+      "anchor_midpoint_char": 2342,
+      "scores": {
+        "A": {
+          "chunk_id": "A:gooaq-2021:p03:c006",
+          "score": 1,
+          "rationale": "Starts mid-word ('o-complete and...') and cuts off mid-word ('in order to discover longe'), omitting the 5-token filter rule and the 5M yield."
+        },
+        "B": {
+          "chunk_id": "B:gooaq-2021:p03:c005",
+          "score": 2,
+          "rationale": "Complete, self-contained section '3.1.1 Query Extraction' from title to final statistic ('The average length of the questions is about 8 tokens.')."
+        },
+        "C": {
+          "chunk_id": "C:gooaq-2021:p03:c005",
+          "score": 2,
+          "rationale": "Identical to Strategy B; complete and coherent paragraph covering section 3.1.1."
+        }
+      }
+    },
+    {
+      "sample_id": "coh_04",
+      "page_id": "gooaq-2021:p04",
+      "anchor_midpoint_char": 2057,
+      "scores": {
+        "A": {
+          "chunk_id": "A:gooaq-2021:p04:c005",
+          "score": 1,
+          "rationale": "Starts mid-sentence ('rating of the answer quality...') without the subject ('We compute aggregate statistics for...'), and ends right after the '3.3 Dataset' header without its body."
+        },
+        "B": {
+          "chunk_id": "B:gooaq-2021:p04:c004",
+          "score": 2,
+          "rationale": "Contains two full, grammatical paragraphs ('Assessment results.' and the first paragraph of '3.3 Dataset Analysis') with clear topic sentences and conclusions."
+        },
+        "C": {
+          "chunk_id": "C:gooaq-2021:p04:c004",
+          "score": 2,
+          "rationale": "Identical to Strategy B; two complete, self-contained paragraphs."
+        }
+      }
+    },
+    {
+      "sample_id": "coh_05",
+      "page_id": "gooaq-2021:p05",
+      "anchor_midpoint_char": 2135,
+      "scores": {
+        "A": {
+          "chunk_id": "A:gooaq-2021:p05:c005",
+          "score": 0,
+          "rationale": "Starts mid-word ('s, (Tsnippet)...'), drops the first sub-task name, then jumps mid-sentence ('since by merely reading the') into footnote 5, and cuts off before finishing footnote 5."
+        },
+        "B": {
+          "chunk_id": "B:gooaq-2021:p05:c004",
+          "score": 1,
+          "rationale": "Starts cleanly at '4.1 Problem Setup' and completes footnote 5, but the main sentence 'since by merely reading the' is interrupted by the column-bottom footnote 5."
+        },
+        "C": {
+          "chunk_id": "C:gooaq-2021:p05:c004",
+          "score": 1,
+          "rationale": "Identical to Strategy B; starts cleanly at section header 4.1 and finishes footnote 5, with minor two-column footnote interruption."
+        }
+      }
+    },
+    {
+      "sample_id": "coh_06",
+      "page_id": "gooaq-2021:p06",
+      "anchor_midpoint_char": 1859,
+      "scores": {
+        "A": {
+          "chunk_id": "A:gooaq-2021:p06:c005",
+          "score": 1,
+          "rationale": "Starts with fragment 'ble.' and mixes the Figure 5 example box with the figure caption, cutting off mid-word ('similar temp')."
+        },
+        "B": {
+          "chunk_id": "B:gooaq-2021:p06:c003",
+          "score": 2,
+          "rationale": "Cleanly isolates the two comparative example answers inside Figure 5 without bleeding into the broken prefix or trailing caption."
+        },
+        "C": {
+          "chunk_id": "C:gooaq-2021:p06:c003",
+          "score": 2,
+          "rationale": "Identical to Strategy B; self-contained comparative answer pair."
+        }
+      }
+    },
+    {
+      "sample_id": "coh_07",
+      "page_id": "gooaq-2021:p07",
+      "anchor_midpoint_char": 2299,
+      "scores": {
+        "A": {
+          "chunk_id": "A:gooaq-2021:p07:c006",
+          "score": 0,
+          "rationale": "Starts with a dangling fragment ('r than 10% of the cases.') and cuts off mid-clause at the end ('where even 200k labeled'), losing the core conclusion of (Q2)."
+        },
+        "B": {
+          "chunk_id": "B:gooaq-2021:p07:c004",
+          "score": 2,
+          "rationale": "Contains the full finding for '(Q2) Labeled data is more helpful for short answer questions' including the complete concluding clause ('indicating that in these question types, model pre-training contributes more than labeled data does.')."
+        },
+        "C": {
+          "chunk_id": "C:gooaq-2021:p07:c004",
+          "score": 2,
+          "rationale": "Identical to Strategy B; complete and self-contained argument for (Q2)."
+        }
+      }
+    },
+    {
+      "sample_id": "coh_08",
+      "page_id": "gooaq-2021:p08",
+      "anchor_midpoint_char": 2098,
+      "scores": {
+        "A": {
+          "chunk_id": "A:gooaq-2021:p08:c005",
+          "score": 1,
+          "rationale": "Starts with fragment 'ong-answer dataset.' and cuts off mid-word ('evaluated on GOOAQ r'), losing the 22.6% vs 28.9% comparison."
+        },
+        "B": {
+          "chunk_id": "B:gooaq-2021:p08:c003",
+          "score": 2,
+          "rationale": "Captures two complete paragraphs summarizing Table 3 and Table 4 extrinsic evaluation results on ELI5 and GOOAQ with no broken words."
+        },
+        "C": {
+          "chunk_id": "C:gooaq-2021:p08:c003",
+          "score": 2,
+          "rationale": "Identical to Strategy B; two complete, coherent paragraphs."
+        }
+      }
+    },
+    {
+      "sample_id": "coh_09",
+      "page_id": "gooaq-2021:p09",
+      "anchor_midpoint_char": 2213,
+      "scores": {
+        "A": {
+          "chunk_id": "A:gooaq-2021:p09:c005",
+          "score": 1,
+          "rationale": "Starts with fragment 'on of models (Khashabi et al., 2021).' and bleeds into 'Acknowledgement / The authors would lik'."
+        },
+        "B": {
+          "chunk_id": "B:gooaq-2021:p09:c004",
+          "score": 2,
+          "rationale": "Exact final paragraph of Section 6 Closing Remarks, starting at 'We hope our analysis...' and ending at 'We leave such investigation to future work.' without bleeding into Acknowledgements."
+        },
+        "C": {
+          "chunk_id": "C:gooaq-2021:p09:c004",
+          "score": 2,
+          "rationale": "Identical to Strategy B; complete and self-contained concluding paragraph."
+        }
+      }
+    },
+    {
+      "sample_id": "coh_10",
+      "page_id": "gooaq-2021:p11",
+      "anchor_midpoint_char": 1570,
+      "scores": {
+        "A": {
+          "chunk_id": "A:gooaq-2021:p11:c004",
+          "score": 0,
+          "rationale": "Starts mid-sentence ('invalid questions.'), mixes prose from Appendix C with footnote 8 URL and raw table text from Figure 6, and cuts off mid-word ('what is the differe')."
+        },
+        "B": {
+          "chunk_id": "B:gooaq-2021:p11:c002",
+          "score": 1,
+          "rationale": "Contains two complete paragraphs (Selenium extraction and Appendix C Invalid Questions and Answers) ending cleanly at a period, though the first sentence of the Selenium paragraph is on the previous chunk."
+        },
+        "C": {
+          "chunk_id": "C:gooaq-2021:p11:c002",
+          "score": 1,
+          "rationale": "Identical to Strategy B; complete sentences and clean Appendix C paragraph boundary."
+        }
+      }
+    }
+  ]
+}

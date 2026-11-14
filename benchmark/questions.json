@@ -1,0 +1,279 @@
+{
+  "benchmark_name": "Day 06 Data Ingestion Benchmark (all-MiniLM-L6-v2 Corpus)",
+  "created_before_experiments_at": "2026-11-14T11:12:00+07:00",
+  "selection_criteria_locked_before_test": "Select the strategy with the highest Dev Evidence Hit@3; break ties using Dev Hit@1, then manual Chunk Coherence score (/2), then Grounding Quality (/2), and finally lower chunk count / ingestion time.",
+  "split_summary": {
+    "total_questions": 20,
+    "dev_count": 15,
+    "test_count": 5,
+    "filter_questions_total": 5,
+    "filter_questions_dev": 3,
+    "filter_questions_test": 2,
+    "leakage_mitigation_note": "Dev and test questions target distinct tables, sections, or findings across all 5 documents. Filter values (year, task_domain) represent user-supplied context provided prior to retrieval and never contain the gold document_id or expected answer."
+  },
+  "questions": [
+    {
+      "id": "q01",
+      "split": "dev",
+      "type": "direct",
+      "question": "How many questions are contained in the GOOAQ dataset, and what percentage of mined answers were found accurate in human evaluation?",
+      "expected_answer": "GOOAQ contains 3 million questions (about 3.1M overall), and human evaluation shows that 94% (94.5% overall) of the mined answers are accurate.",
+      "gold_source_id": "gooaq-2021",
+      "gold_page": 1,
+      "evidence_quote": "containing 3 million questions with diverse answer types ranging from factual short answers to snippets to collections. Our human evaluation shows that 94% of the mined answers are accurate",
+      "alternative_gold": [
+        {
+          "gold_source_id": "gooaq-2021",
+          "gold_page": 4,
+          "evidence_quote": "Overall 3.1M 98.6 94.5"
+        }
+      ],
+      "filter": null
+    },
+    {
+      "id": "q02",
+      "split": "dev",
+      "type": "condition_exception",
+      "question": "During query extraction for GOOAQ, why are questions shorter than 5 tokens filtered out, and what is the average length of the collected questions?",
+      "expected_answer": "Questions shorter than 5 tokens are filtered out because they are often incomplete questions; the average length of the collected questions is about 8 tokens.",
+      "gold_source_id": "gooaq-2021",
+      "gold_page": 3,
+      "evidence_quote": "We filter out any questions shorter than 5 tokens as they are often incomplete questions. This process yields over∼5M questions, which were collected over a span of 6 months. The average length of the questions is about 8 tokens.",
+      "filter": null
+    },
+    {
+      "id": "q03",
+      "split": "dev",
+      "type": "condition_exception",
+      "question": "What qualification requirements were imposed on Amazon Mechanical Turk workers for assessing GOOAQ quality?",
+      "expected_answer": "Workers had to be based in a predominantly native English-speaking country (USA, Canada, UK, Australia), have completed at least 5000 HITs with >= 99% approval rate, and pass a qualification test of half-a-dozen questions.",
+      "gold_source_id": "gooaq-2021",
+      "gold_page": 4,
+      "evidence_quote": "we required workers to be based in a country with a population predominantly of native English speakers (e.g., USA, Canada, UK, and Australia) and have completed at least 5000 HITs with ≥ 99% assignment approval rate.",
+      "filter": null
+    },
+    {
+      "id": "q04",
+      "split": "dev",
+      "type": "paraphrase",
+      "question": "How did the authors of GOOAQ construct training splits to minimize data leakage into the dev and test sets?",
+      "expected_answer": "They selected the training instances most dissimilar to the evaluation splits, measuring similarity by the maximum token-overlap with any dev/test instance over both questions and answers.",
+      "gold_source_id": "gooaq-2021",
+      "gold_page": 5,
+      "evidence_quote": "To minimize this issue, we create training splits by selecting the most dissimilar instances to our evaluation splits. The measure of similarity for each training instance is computed as the maximum amount of tokenoverlap with any of the instances in the test/dev set",
+      "filter": null
+    },
+    {
+      "id": "q05",
+      "split": "dev",
+      "type": "direct",
+      "question": "In the GOOAQ error analysis of 30 model predictions, what were the percentages of incompleteness, redundancy, hallucination, and incoherence errors for T5-small versus T5-11B?",
+      "expected_answer": "T5-small had 52.5% incompleteness, 65.0% redundancy, 47.5% hallucination, and 2.5% incoherence, whereas T5-11B had 22.5% incompleteness, 8.3% redundancy, 18.3% hallucination, and 0.0% incoherence.",
+      "gold_source_id": "gooaq-2021",
+      "gold_page": 8,
+      "evidence_quote": "Model IncompletenessRedundancyHallucinationIncoherence\nT5-small 52.5 65.0 47.5 2.5\nT5-11B 22.5 8.3 18.3 0.0",
+      "filter": null
+    },
+    {
+      "id": "q06",
+      "split": "dev",
+      "type": "paraphrase",
+      "question": "In the PAQ generation pipeline, how are easy negatives and hard negatives sampled to train the RoBERTa passage selection model?",
+      "expected_answer": "Easy negatives are sampled at random from Wikipedia, while hard negatives are sampled from the same Wikipedia article as the positive passage.",
+      "gold_source_id": "paq-2021",
+      "gold_page": 3,
+      "evidence_quote": "We sample easy negatives at random from Wikipedia, and hard negatives from the same Wikipedia article as the positive passage. Easy negatives help the model to learn topics of interest, and hard negatives help to differentiate between interesting and non-interesting passages from the same article.",
+      "filter": null
+    },
+    {
+      "id": "q07",
+      "split": "dev",
+      "type": "condition_exception",
+      "question": "Why does PAQ use global filtering with an ODQA model instead of local filtering with a machine reading comprehension model?",
+      "expected_answer": "Local filtering does not remove ambiguous questions that can only be answered with access to the source passage, whereas global filtering supplies only the generated question without the source passage to ensure consistency.",
+      "gold_source_id": "paq-2021",
+      "gold_page": 4,
+      "evidence_quote": "However, local filtering will not remove questions which are ambiguous (Min et al., 2020b), and can only be answered correctly with access to the source passage. Thus, we use an ODQA model for filtering, pf (a| q, C), supplied with only the generated question, and not the source passage. We refer to this as global filtering",
+      "filter": null
+    },
+    {
+      "id": "q08",
+      "split": "dev",
+      "type": "direct",
+      "question": "How many filtered QA-pairs are in the final PAQ knowledge base, and from how many extracted answer spans and unique generated questions were they obtained?",
+      "expected_answer": "PAQ consists of 65M (64.9M) filtered QA-pairs, obtained from 165M (165.7M) extracted answer spans and 279M (279.2M) unique questions before global filtering.",
+      "gold_source_id": "paq-2021",
+      "gold_page": 6,
+      "evidence_quote": "As shown in Table 1, PAQ consists of 65M filtered QA pairs.6 This was obtained by extracting 165M answer spans and generating 279M unique questions before applying global filtering.",
+      "filter": null
+    },
+    {
+      "id": "q09",
+      "split": "dev",
+      "type": "condition_exception",
+      "question": "In selective question answering on Natural Questions, at what answer coverage threshold does FiD outperform RePAQ, and by how much does RePAQ outperform FiD at 50% coverage?",
+      "expected_answer": "At 50% coverage, RePAQ outperforms FiD by over 10%; FiD only outperforms RePAQ when systems are required to answer more than 85% of questions.",
+      "gold_source_id": "paq-2021",
+      "gold_page": 9,
+      "evidence_quote": "of 50%, RePAQ outperforms FiD by over 10%. FiD only outperforms RePAQ when we require systems to answer more than 85% of questions.",
+      "filter": null
+    },
+    {
+      "id": "q10",
+      "split": "dev",
+      "type": "condition_exception",
+      "question": "Under what character length or text conditions is a Reddit conversational example filtered out during preprocessing?",
+      "expected_answer": "An example is filtered out if either the context or response feature has more than 128 characters, fewer than 9 characters, or if its text is [deleted] or [removed].",
+      "gold_source_id": "reddit-2019",
+      "gold_page": 3,
+      "evidence_quote": "The example is filtered if either feature has more than 128 characters, or fewer than 9 characters, or if its text is set to [deleted] or [removed].",
+      "filter": null
+    },
+    {
+      "id": "q11",
+      "split": "dev",
+      "type": "paraphrase",
+      "question": "How is the 1-of-100 accuracy metric defined and computed for conversational response selection?",
+      "expected_answer": "It is Recall@1 using 99 randomly sampled responses from the test dataset as negatives, efficiently computed in batches of 100 (context, response) pairs where the other 99 elements in the batch act as negatives.",
+      "gold_source_id": "reddit-2019",
+      "gold_page": 4,
+      "evidence_quote": "When evaluating conversational response selection models on these datasets, we propose a Recall@k metric termed 1-of-100 accuracy. This is Recall@1 using 99 responses sampled from the test dataset as negatives.",
+      "alternative_gold": [
+        {
+          "gold_source_id": "reddit-2019",
+          "gold_page": 4,
+          "evidence_quote": "batches of 100 (context, response) pairs can be processed such that the other 99 elements in the batch serve as the negative examples."
+        }
+      ],
+      "filter": null
+    },
+    {
+      "id": "q12",
+      "split": "dev",
+      "type": "metadata_filter",
+      "question": "In the 2019 conversational datasets paper, what 1-of-100 accuracy scores do TF-IDF, BM25, and POLYAI-ENCODER achieve on the Reddit, OpenSubtitles, and AmazonQA benchmarks?",
+      "expected_answer": "TF-IDF achieves 26.7 (Reddit), 10.9 (OpenSubtitles), 51.8 (AmazonQA); BM25 achieves 27.6, 10.9, 52.3; POLYAI-ENCODER achieves 61.3, 30.6, and 84.2.",
+      "gold_source_id": "reddit-2019",
+      "gold_page": 6,
+      "evidence_quote": "Reddit OpenSubtitles AmazonQA\nTF-IDF 26.7 10.9 51.8\nBM25 27.6 10.9 52.3",
+      "filter": {
+        "year": 2019,
+        "task_domain": "dialogue"
+      }
+    },
+    {
+      "id": "q13",
+      "split": "dev",
+      "type": "metadata_filter",
+      "question": "In the 2017 question answering dataset study, how many question-answer pairs, average snippets per pair, and average tokens per snippet are in the cleaned dataset?",
+      "expected_answer": "There are 140,461 question-answer pairs, coupled with 49.6 ± 2.10 snippets on average, and each snippet is 37.3 ± 11.7 tokens long on average.",
+      "gold_source_id": "searchqa-2017",
+      "gold_page": 2,
+      "evidence_quote": "After all these processes, we have ended up with 140,461 question-answer pairs. Each pair is coupled with a set of 49.6±2.10 snippets on average. Each snippet is 37.3 ±11.7 tokens long on average.",
+      "filter": {
+        "year": 2017,
+        "task_domain": "question_answering"
+      }
+    },
+    {
+      "id": "q14",
+      "split": "dev",
+      "type": "metadata_filter",
+      "question": "For the summarization dataset published in 2018, how were articles with only bold lines filtered out, and how many articles and summaries remained in the final dataset?",
+      "expected_answer": "A size threshold was used to remove pairs where the summary was longer than the article size, leaving a final dataset of 204,004 articles and their summaries (from 230,843 generated pairs).",
+      "gold_source_id": "wikihow-2018",
+      "gold_page": 3,
+      "evidence_quote": "To filter out these articles, we used a size threshold so that pairs with summaries longer than the article size will be removed. The final dataset is made of 204, 004 articles and their summaries.",
+      "filter": {
+        "year": 2018,
+        "task_domain": "summarization"
+      }
+    },
+    {
+      "id": "q15",
+      "split": "dev",
+      "type": "direct",
+      "question": "What are the article sentence length, summary sentence length, and compression ratio of WikiHow compared to CNN/Daily Mail?",
+      "expected_answer": "WikiHow has an article sentence length of 100.68, summary sentence length of 42.27, and compression ratio of 2.38, whereas CNN/Daily Mail has 118.73, 82.63, and a compression ratio of 1.44.",
+      "gold_source_id": "wikihow-2018",
+      "gold_page": 4,
+      "evidence_quote": "WikiHow CNN/Daily Mail\nArticle Sentence Length 100.68 118.73\nSummary Sentence Length 42.27 82.63\nCompression Ratio 2.38 1.44",
+      "filter": null
+    },
+    {
+      "id": "q16",
+      "split": "test",
+      "type": "direct",
+      "question": "When evaluating extrinsic utility on the ELI5 dataset, what scores did T5-small and T5-11B trained only on GOOAQ achieve compared to the same models trained on ELI5?",
+      "expected_answer": "T5-small and T5-11B trained on GOOAQ (no ELI5) achieved 21.7 (or 21.8 in text) and 22.9 respectively, outperforming T5-small (19.0) and T5-11B (22.7) trained on ELI5.",
+      "gold_source_id": "gooaq-2021",
+      "gold_page": 8,
+      "evidence_quote": "T5-small G OOAQ (no ELI5) no 21.7\nT5-11B G OOAQ (no ELI5) no 22.9\nT5-small ELI5 no 19.0\nT5-11B ELI5 no 22.7",
+      "filter": null
+    },
+    {
+      "id": "q17",
+      "split": "test",
+      "type": "paraphrase",
+      "question": "What were the disk image sizes of the RePAQ configurations that won two tracks of the 2020 EfficientQA NeurIPS competition?",
+      "expected_answer": "Memory-optimised configurations of RePAQ won the 500MB and Smallest System tracks with disk image sizes of 336MB and 29MB, respectively.",
+      "gold_source_id": "paq-2021",
+      "gold_page": 2,
+      "evidence_quote": "Memory-optimised configurations of RePAQ won two of the four tracks of the 2020 EfficientQA NeurIPS competition (Min et al., 2020a), with system sizes of 336MB and 29MB, respectively.",
+      "alternative_gold": [
+        {
+          "gold_source_id": "paq-2021",
+          "gold_page": 8,
+          "evidence_quote": "Highly-optimized RePAQ models won the “500MB” and “Smallest System” tracks of the EfficientQA NeurIPS competition with disk images of 336MB and 29MB respectively."
+        }
+      ],
+      "filter": null
+    },
+    {
+      "id": "q18",
+      "split": "test",
+      "type": "metadata_filter",
+      "question": "In the 2019 dialogue dataset repository, how many comments, conversation threads, and total TensorFlow examples are included in the Reddit dataset from 2015 to 2018?",
+      "expected_answer": "The Reddit data from 2015 to 2018 consists of 3,680,746,776 comments in 256,095,216 threads, creating 727,013,715 TensorFlow examples (split into 654,396,778 train and 72,616,937 test).",
+      "gold_source_id": "reddit-2019",
+      "gold_page": 3,
+      "evidence_quote": "The data from 2015 to 2018 inclusive consists of 3,680,746,776 comments, in 256,095,216 threads. In total, 727,013,715 Tensorflow examples are created from this data.",
+      "filter": {
+        "year": 2019,
+        "task_domain": "dialogue"
+      }
+    },
+    {
+      "id": "q19",
+      "split": "test",
+      "type": "condition_exception",
+      "question": "During the cleaning of SearchQA snippets, what specific terms or attributes caused a snippet to be removed so answers could not be found trivially, and what maximum answer length was retained?",
+      "expected_answer": "Snippets were removed if they included the air-date of the Jeopardy! episode, the exact copy of the question, or the terms 'Jeopardy!', 'quiz', or 'trivia'; only tuples with answers of three words or less were kept.",
+      "gold_source_id": "searchqa-2017",
+      "gold_page": 2,
+      "evidence_quote": "First, we removed any snippet returned that included the air-date of the Jeopardy! episode, the exact copy of the question,",
+      "alternative_gold": [
+        {
+          "gold_source_id": "searchqa-2017",
+          "gold_page": 2,
+          "evidence_quote": "or a term “Jeopardy!”, “quiz” or “trivia”, to ensure that the answer could not be found trivially by a process of word/phrase matching."
+        }
+      ],
+      "filter": null
+    },
+    {
+      "id": "q20",
+      "split": "test",
+      "type": "metadata_filter",
+      "question": "In the 2018 text summarization paper, why does the Lead-3 baseline perform much better on CNN/Daily Mail than on WikiHow, and what ROUGE-L score does Pointer-generator + coverage achieve on WikiHow?",
+      "expected_answer": "News articles in CNN/Daily Mail follow the journalistic Inverted Pyramid style where the opening sentences contain the most important information, whereas WikiHow articles describe procedural steps of similar importance throughout; Pointer-generator + coverage achieves 26.54 ROUGE-L on WikiHow.",
+      "gold_source_id": "wikihow-2018",
+      "gold_page": 4,
+      "evidence_quote": "Pointer-generator + coverage 39.53 17.28 36.38 17.32 28.53 9.23 26.54 10.56",
+      "filter": {
+        "year": 2018,
+        "task_domain": "summarization"
+      }
+    }
+  ]
+}

@@ -1,0 +1,252 @@
+[
+  {
+    "sample_id": "coh_01",
+    "page_id": "gooaq-2021:p01",
+    "document_id": "gooaq-2021",
+    "page": 1,
+    "anchor_midpoint_char": 2104,
+    "anchor_snippet": "knowledge\n1The dataset is available at https://github.com/\nallenai/gooaq under an appropriate license.\nbases (Roberts et",
+    "strategy_chunks": {
+      "A": {
+        "chunk_id": "A:gooaq-2021:p01:c005",
+        "char_length": 499,
+        "text": "or direct answer QA) has resulted in numerous datasets\nand powerful models for answering questions without a specified context. This task requires the use\nof background knowledge either stored in the QA\nmodel or retrieved from large corpora or knowledge\n1The dataset is available at https://github.com/\nallenai/gooaq under an appropriate license.\nbases (Roberts et al., 2020; Lewis et al., 2021). Existing effort, however, involves isolated studies on\nniche answer types, mainly short responses and,"
+      },
+      "B": {
+        "chunk_id": "B:gooaq-2021:p01:c003",
+        "char_length": 927,
+        "text": "However, their surprisingly high\nquality in generating coherent and accurate answers for questions requiring long responses\n(such as ‘how’ and ‘why’ questions) is less reliant on observing annotated data and mainly\nsupported by their pre-training. Moreover, we\nshow that G OOAQ is a valuable training resource, resulting in strong performance on the\nrecent ELI5 long-answers dataset. We release\nGOOAQ to facilitate further research on improving QA with diverse response types.1\n\n1 Introduction\nResearch in “open” question answering (also referred to as open-response, open-domain, or direct answer QA) has resulted in numerous datasets\nand powerful models for answering questions without a specified context. This task requires the use\nof background knowledge either stored in the QA\nmodel or retrieved from large corpora or knowledge\n1The dataset is available at https://github.com/\nallenai/gooaq under an appropriate license."
+      },
+      "C": {
+        "chunk_id": "C:gooaq-2021:p01:c003",
+        "char_length": 927,
+        "text": "However, their surprisingly high\nquality in generating coherent and accurate answers for questions requiring long responses\n(such as ‘how’ and ‘why’ questions) is less reliant on observing annotated data and mainly\nsupported by their pre-training. Moreover, we\nshow that G OOAQ is a valuable training resource, resulting in strong performance on the\nrecent ELI5 long-answers dataset. We release\nGOOAQ to facilitate further research on improving QA with diverse response types.1\n\n1 Introduction\nResearch in “open” question answering (also referred to as open-response, open-domain, or direct answer QA) has resulted in numerous datasets\nand powerful models for answering questions without a specified context. This task requires the use\nof background knowledge either stored in the QA\nmodel or retrieved from large corpora or knowledge\n1The dataset is available at https://github.com/\nallenai/gooaq under an appropriate license."
+      }
+    }
+  },
+  {
+    "sample_id": "coh_02",
+    "page_id": "gooaq-2021:p02",
+    "document_id": "gooaq-2021",
+    "page": 2,
+    "anchor_midpoint_char": 2555,
+    "anchor_snippet": "., 2020) onGOOAQ with a small\namount of labeled data. While LMs struggle, as\nexpected, in this setting on short response",
+    "strategy_chunks": {
+      "A": {
+        "chunk_id": "A:gooaq-2021:p02:c006",
+        "char_length": 500,
+        "text": "wer types:\n(Q1) benefit similarly from pre-training?\n(Q2) benefit similarly from labeled data?\n(Q3) benefit similarly from larger models?\nTo understand the contribution of pre-training,\n(Q1), we train the powerful T5 language\nmodel (Raffel et al., 2020) onGOOAQ with a small\namount of labeled data. While LMs struggle, as\nexpected, in this setting on short response questions, they perform surprisingly well in generating\nsnippet and collection responses.3 We hypothesize this is because response flu"
+      },
+      "B": {
+        "chunk_id": "B:gooaq-2021:p02:c004",
+        "char_length": 700,
+        "text": "(Q1) benefit similarly from pre-training?\n(Q2) benefit similarly from labeled data?\n(Q3) benefit similarly from larger models?\nTo understand the contribution of pre-training,\n(Q1), we train the powerful T5 language\nmodel (Raffel et al., 2020) onGOOAQ with a small\namount of labeled data. While LMs struggle, as\nexpected, in this setting on short response questions, they perform surprisingly well in generating\nsnippet and collection responses.3 We hypothesize this is because response fluency and coherence have a much higher weight in such questions,\nand these factors remarkably benefit from the LM\npre-training objective. Regarding the value of labelled data, (Q2), we observe the opposite trend:"
+      },
+      "C": {
+        "chunk_id": "C:gooaq-2021:p02:c004",
+        "char_length": 700,
+        "text": "(Q1) benefit similarly from pre-training?\n(Q2) benefit similarly from labeled data?\n(Q3) benefit similarly from larger models?\nTo understand the contribution of pre-training,\n(Q1), we train the powerful T5 language\nmodel (Raffel et al., 2020) onGOOAQ with a small\namount of labeled data. While LMs struggle, as\nexpected, in this setting on short response questions, they perform surprisingly well in generating\nsnippet and collection responses.3 We hypothesize this is because response fluency and coherence have a much higher weight in such questions,\nand these factors remarkably benefit from the LM\npre-training objective. Regarding the value of labelled data, (Q2), we observe the opposite trend:"
+      }
+    }
+  },
+  {
+    "sample_id": "coh_03",
+    "page_id": "gooaq-2021:p03",
+    "document_id": "gooaq-2021",
+    "page": 3,
+    "anchor_midpoint_char": 2342,
+    "anchor_snippet": "s from answer boxes.\n3.1.1 Query Extraction\nTo extract a rich yet natural set of questions we\nuse Google auto-completion",
+    "strategy_chunks": {
+      "A": {
+        "chunk_id": "A:gooaq-2021:p03:c006",
+        "char_length": 500,
+        "text": "o-complete and\nextracting answers from answer boxes.\n3.1.1 Query Extraction\nTo extract a rich yet natural set of questions we\nuse Google auto-completion.4 A similar strategy\nwas also used by Berant et al. (2013), albeit in the\ncontext of a slightly different study. We start with\na seed set of question terms (e.g., ‘who’, ‘where’,\netc.; the complete list is in Appendix A.) We bootstrap based on this set, by repeatedly querying prefixes of previously extracted questions, in order to\ndiscover longe"
+      },
+      "B": {
+        "chunk_id": "B:gooaq-2021:p03:c005",
+        "char_length": 817,
+        "text": "3.1.1 Query Extraction\nTo extract a rich yet natural set of questions we\nuse Google auto-completion.4 A similar strategy\nwas also used by Berant et al. (2013), albeit in the\ncontext of a slightly different study. We start with\na seed set of question terms (e.g., ‘who’, ‘where’,\netc.; the complete list is in Appendix A.) We bootstrap based on this set, by repeatedly querying prefixes of previously extracted questions, in order to\ndiscover longer and richer sets of questions. Such\nquestions extracted from the autocomplete algorithm reflect popular questions posed by users of\nGoogle. We filter out any questions shorter than 5\ntokens as they are often incomplete questions. This\nprocess yields over∼5M questions, which were\ncollected over a span of 6 months. The average\nlength of the questions is about 8 tokens."
+      },
+      "C": {
+        "chunk_id": "C:gooaq-2021:p03:c005",
+        "char_length": 817,
+        "text": "3.1.1 Query Extraction\nTo extract a rich yet natural set of questions we\nuse Google auto-completion.4 A similar strategy\nwas also used by Berant et al. (2013), albeit in the\ncontext of a slightly different study. We start with\na seed set of question terms (e.g., ‘who’, ‘where’,\netc.; the complete list is in Appendix A.) We bootstrap based on this set, by repeatedly querying prefixes of previously extracted questions, in order to\ndiscover longer and richer sets of questions. Such\nquestions extracted from the autocomplete algorithm reflect popular questions posed by users of\nGoogle. We filter out any questions shorter than 5\ntokens as they are often incomplete questions. This\nprocess yields over∼5M questions, which were\ncollected over a span of 6 months. The average\nlength of the questions is about 8 tokens."
+      }
+    }
+  },
+  {
+    "sample_id": "coh_04",
+    "page_id": "gooaq-2021:p04",
+    "document_id": "gooaq-2021",
+    "page": 4,
+    "anchor_midpoint_char": 2057,
+    "anchor_snippet": "ons, a high percentage of the answers\nwere deemed high-quality for most of the question/answer types. This indicates a r",
+    "strategy_chunks": {
+      "A": {
+        "chunk_id": "A:gooaq-2021:p04:c005",
+        "char_length": 498,
+        "text": "rating of the answer quality, among\nvalid questions. As can be seen in the results in\nTable 1 only a small percentage of the questions\nwere deemed ‘invalid’. Additionally, among the\n‘valid’ questions, a high percentage of the answers\nwere deemed high-quality for most of the question/answer types. This indicates a reasonable quality of GOOAQ question-answer pairs, as evaluated\ndirectly, independent from any systems. (Examples of invalid questions/answers are provided in\nAppendix C.)\n3.3 Dataset"
+      },
+      "B": {
+        "chunk_id": "B:gooaq-2021:p04:c004",
+        "char_length": 919,
+        "text": "Assessment results. We compute aggregate\nstatistics for (1) average rating of questions and\n(2) average rating of the answer quality, among\nvalid questions. As can be seen in the results in\nTable 1 only a small percentage of the questions\nwere deemed ‘invalid’. Additionally, among the\n‘valid’ questions, a high percentage of the answers\nwere deemed high-quality for most of the question/answer types. This indicates a reasonable quality of GOOAQ question-answer pairs, as evaluated\ndirectly, independent from any systems. (Examples of invalid questions/answers are provided in\nAppendix C.)\n\n3.3 Dataset Analysis\nTo better understand the content of GOOAQ, we\npresent several distributions from the data. Fig. 2\nshows the length distribution of GOOAQ questions\nand that of NQ (Kwiatkowski et al., 2019). While a\nvast majority of NQ questions contain 8-10 tokens,\nGOOAQ questions have a somewhat broader range\nof lengths."
+      },
+      "C": {
+        "chunk_id": "C:gooaq-2021:p04:c004",
+        "char_length": 919,
+        "text": "Assessment results. We compute aggregate\nstatistics for (1) average rating of questions and\n(2) average rating of the answer quality, among\nvalid questions. As can be seen in the results in\nTable 1 only a small percentage of the questions\nwere deemed ‘invalid’. Additionally, among the\n‘valid’ questions, a high percentage of the answers\nwere deemed high-quality for most of the question/answer types. This indicates a reasonable quality of GOOAQ question-answer pairs, as evaluated\ndirectly, independent from any systems. (Examples of invalid questions/answers are provided in\nAppendix C.)\n\n3.3 Dataset Analysis\nTo better understand the content of GOOAQ, we\npresent several distributions from the data. Fig. 2\nshows the length distribution of GOOAQ questions\nand that of NQ (Kwiatkowski et al., 2019). While a\nvast majority of NQ questions contain 8-10 tokens,\nGOOAQ questions have a somewhat broader range\nof lengths."
+      }
+    }
+  },
+  {
+    "sample_id": "coh_05",
+    "page_id": "gooaq-2021:p05",
+    "document_id": "gooaq-2021",
+    "page": 5,
+    "anchor_midpoint_char": 2135,
+    "anchor_snippet": "tionretrieval (IR) systems in conjunction to LMs (i.e., an ‘openbook‘ setup). We observed that IR results are quite nois",
+    "strategy_chunks": {
+      "A": {
+        "chunk_id": "A:gooaq-2021:p05:c005",
+        "char_length": 500,
+        "text": "s, (Tsnippet) snippet responses questions, and (Tcollection) collection response questions. We train and evaluate models for\neach of these sub-tasks separately. We define them\nas different sub-tasks since by merely reading the\n5In our early experiments, we considered informationretrieval (IR) systems in conjunction to LMs (i.e., an ‘openbook‘ setup). We observed that IR results are quite noisy\nfor most open questions. Hence, a system trained with the\nretrieved documents did not benefit from them"
+      },
+      "B": {
+        "chunk_id": "B:gooaq-2021:p05:c004",
+        "char_length": 781,
+        "text": "4.1 Problem Setup\nWe split GOOAQ into three sub-tasks: ( Tshort)\nshort responses questions, (Tsnippet) snippet responses questions, and (Tcollection) collection response questions. We train and evaluate models for\neach of these sub-tasks separately. We define them\nas different sub-tasks since by merely reading the\n5In our early experiments, we considered informationretrieval (IR) systems in conjunction to LMs (i.e., an ‘openbook‘ setup). We observed that IR results are quite noisy\nfor most open questions. Hence, a system trained with the\nretrieved documents did not benefit from them (the model\nlearned to ignore the noisy retrieval results). Similar observations were also made by Krishna et al. (2021, Sec3.1) (“generations are similar irrespective of type of retrievals”)."
+      },
+      "C": {
+        "chunk_id": "C:gooaq-2021:p05:c004",
+        "char_length": 781,
+        "text": "4.1 Problem Setup\nWe split GOOAQ into three sub-tasks: ( Tshort)\nshort responses questions, (Tsnippet) snippet responses questions, and (Tcollection) collection response questions. We train and evaluate models for\neach of these sub-tasks separately. We define them\nas different sub-tasks since by merely reading the\n5In our early experiments, we considered informationretrieval (IR) systems in conjunction to LMs (i.e., an ‘openbook‘ setup). We observed that IR results are quite noisy\nfor most open questions. Hence, a system trained with the\nretrieved documents did not benefit from them (the model\nlearned to ignore the noisy retrieval results). Similar observations were also made by Krishna et al. (2021, Sec3.1) (“generations are similar irrespective of type of retrievals”)."
+      }
+    }
+  },
+  {
+    "sample_id": "coh_06",
+    "page_id": "gooaq-2021:p06",
+    "document_id": "gooaq-2021",
+    "page": 6,
+    "anchor_midpoint_char": 1859,
+    "anchor_snippet": "ible.\nFrom the perspective of the IRS,\npaying your life insurance premiums\nis like buying a car, a cell phone or\nany oth",
+    "strategy_chunks": {
+      "A": {
+        "chunk_id": "A:gooaq-2021:p06:c005",
+        "char_length": 500,
+        "text": "ble.\nFrom the perspective of the IRS,\npaying your life insurance premiums\nis like buying a car, a cell phone or\nany other product or service.\nAnswer B: Life insurance premiums\ncan count as a tax-deductible medical\nexpense (along with other out-of-pocket\nmedical expenses) if you itemize your\ndeductions. You can only deduct\nmedical expenses after they exceed\n7.5% of your adjusted gross income. \nFigure 5: Crowdsourcing interface used for human assessment of our baselines (§4). We use a similar temp"
+      },
+      "B": {
+        "chunk_id": "B:gooaq-2021:p06:c003",
+        "char_length": 389,
+        "text": "From the perspective of the IRS,\npaying your life insurance premiums\nis like buying a car, a cell phone or\nany other product or service.\nAnswer B: Life insurance premiums\ncan count as a tax-deductible medical\nexpense (along with other out-of-pocket\nmedical expenses) if you itemize your\ndeductions. You can only deduct\nmedical expenses after they exceed\n7.5% of your adjusted gross income."
+      },
+      "C": {
+        "chunk_id": "C:gooaq-2021:p06:c003",
+        "char_length": 389,
+        "text": "From the perspective of the IRS,\npaying your life insurance premiums\nis like buying a car, a cell phone or\nany other product or service.\nAnswer B: Life insurance premiums\ncan count as a tax-deductible medical\nexpense (along with other out-of-pocket\nmedical expenses) if you itemize your\ndeductions. You can only deduct\nmedical expenses after they exceed\n7.5% of your adjusted gross income."
+      }
+    }
+  },
+  {
+    "sample_id": "coh_07",
+    "page_id": "gooaq-2021:p07",
+    "document_id": "gooaq-2021",
+    "page": 7,
+    "anchor_midpoint_char": 2299,
+    "anchor_snippet": "ie” in fewer than 10% of the cases.\nattributes of the person working out. All of these\nresponses would be equally correc",
+    "strategy_chunks": {
+      "A": {
+        "chunk_id": "A:gooaq-2021:p07:c006",
+        "char_length": 499,
+        "text": "r than 10% of the cases.\nattributes of the person working out. All of these\nresponses would be equally correct.\n(Q2) Labeled data is more helpful for short answer questions. Based again on both the automatic and human evaluations (Fig. 4; left), the performance of both small and 11B parameter models\non the short response questions quickly improves\nas we increase the amount of training data, especially beyond 20k. This is in contrast with snippet\nand collection questions, where even 200k labeled"
+      },
+      "B": {
+        "chunk_id": "B:gooaq-2021:p07:c004",
+        "char_length": 612,
+        "text": "attributes of the person working out. All of these\nresponses would be equally correct.\n(Q2) Labeled data is more helpful for short answer questions. Based again on both the automatic and human evaluations (Fig. 4; left), the performance of both small and 11B parameter models\non the short response questions quickly improves\nas we increase the amount of training data, especially beyond 20k. This is in contrast with snippet\nand collection questions, where even 200k labeled\ninstances don’t appear to help much, indicating\nthat in these question types, model pre-training\ncontributes more than labeled data does."
+      },
+      "C": {
+        "chunk_id": "C:gooaq-2021:p07:c004",
+        "char_length": 612,
+        "text": "attributes of the person working out. All of these\nresponses would be equally correct.\n(Q2) Labeled data is more helpful for short answer questions. Based again on both the automatic and human evaluations (Fig. 4; left), the performance of both small and 11B parameter models\non the short response questions quickly improves\nas we increase the amount of training data, especially beyond 20k. This is in contrast with snippet\nand collection questions, where even 200k labeled\ninstances don’t appear to help much, indicating\nthat in these question types, model pre-training\ncontributes more than labeled data does."
+      }
+    }
+  },
+  {
+    "sample_id": "coh_08",
+    "page_id": "gooaq-2021:p08",
+    "document_id": "gooaq-2021",
+    "page": 8,
+    "anchor_midpoint_char": 2098,
+    "anchor_snippet": "They are even better than the same architectures trained with ELI5’s\nown training data (19.0 and 22.7, resp.) and on pa",
+    "strategy_chunks": {
+      "A": {
+        "chunk_id": "A:gooaq-2021:p08:c005",
+        "char_length": 500,
+        "text": "ong-answer dataset.\nOur evaluation, summarized in Table 3, shows\nthat both our small and 11B T5 models trained on\nGOOAQ’s snippet-answer subset (no training on\nELI5) perform quite well (21.8 and 22.9, respectively) when evaluated on ELI5. They are even better than the same architectures trained with ELI5’s\nown training data (19.0 and 22.7, resp.) and on par\nwith retrieval based state-of-the-art models (23.4).\nComplementary to these results, a T5-11B model\ntrained on ELI5 and evaluated on GOOAQ r"
+      },
+      "B": {
+        "chunk_id": "B:gooaq-2021:p08:c003",
+        "char_length": 720,
+        "text": "Our evaluation, summarized in Table 3, shows\nthat both our small and 11B T5 models trained on\nGOOAQ’s snippet-answer subset (no training on\nELI5) perform quite well (21.8 and 22.9, respectively) when evaluated on ELI5. They are even better than the same architectures trained with ELI5’s\nown training data (19.0 and 22.7, resp.) and on par\nwith retrieval based state-of-the-art models (23.4).\n\nComplementary to these results, a T5-11B model\ntrained on ELI5 and evaluated on GOOAQ results\nin 22.6%, much lower than∼28.9% in Table 4.\nWe hypothesize that despite GOOAQ being collected differently than ELI5, a notable portion of\nELI5 is covered byGOOAQ, indicating good coverage of common questions posed by ordinary users."
+      },
+      "C": {
+        "chunk_id": "C:gooaq-2021:p08:c003",
+        "char_length": 720,
+        "text": "Our evaluation, summarized in Table 3, shows\nthat both our small and 11B T5 models trained on\nGOOAQ’s snippet-answer subset (no training on\nELI5) perform quite well (21.8 and 22.9, respectively) when evaluated on ELI5. They are even better than the same architectures trained with ELI5’s\nown training data (19.0 and 22.7, resp.) and on par\nwith retrieval based state-of-the-art models (23.4).\n\nComplementary to these results, a T5-11B model\ntrained on ELI5 and evaluated on GOOAQ results\nin 22.6%, much lower than∼28.9% in Table 4.\nWe hypothesize that despite GOOAQ being collected differently than ELI5, a notable portion of\nELI5 is covered byGOOAQ, indicating good coverage of common questions posed by ordinary users."
+      }
+    }
+  },
+  {
+    "sample_id": "coh_09",
+    "page_id": "gooaq-2021:p09",
+    "document_id": "gooaq-2021",
+    "page": 9,
+    "anchor_midpoint_char": 2213,
+    "anchor_snippet": "et al., 2019), creating a\nbetter question generation system, etc. We leave\nsuch investigation to future work.\nAcknowledg",
+    "strategy_chunks": {
+      "A": {
+        "chunk_id": "A:gooaq-2021:p09:c005",
+        "char_length": 500,
+        "text": "on of models (Khashabi et al., 2021).\nWe hope our analysis and data will benefit the\nunderstanding of and further development of QA\nsystems for dealing with diverse response types.\nWhile we used GOOAQ for the purposes of QA,\nwe expect this data to have a variety of use-cases,\nsuch as building a knowledge-base accessible via\nquestion queries (Bosselut et al., 2019), creating a\nbetter question generation system, etc. We leave\nsuch investigation to future work.\nAcknowledgement\nThe authors would lik"
+      },
+      "B": {
+        "chunk_id": "B:gooaq-2021:p09:c004",
+        "char_length": 424,
+        "text": "We hope our analysis and data will benefit the\nunderstanding of and further development of QA\nsystems for dealing with diverse response types.\nWhile we used GOOAQ for the purposes of QA,\nwe expect this data to have a variety of use-cases,\nsuch as building a knowledge-base accessible via\nquestion queries (Bosselut et al., 2019), creating a\nbetter question generation system, etc. We leave\nsuch investigation to future work."
+      },
+      "C": {
+        "chunk_id": "C:gooaq-2021:p09:c004",
+        "char_length": 424,
+        "text": "We hope our analysis and data will benefit the\nunderstanding of and further development of QA\nsystems for dealing with diverse response types.\nWhile we used GOOAQ for the purposes of QA,\nwe expect this data to have a variety of use-cases,\nsuch as building a knowledge-base accessible via\nquestion queries (Bosselut et al., 2019), creating a\nbetter question generation system, etc. We leave\nsuch investigation to future work."
+      }
+    }
+  },
+  {
+    "sample_id": "coh_10",
+    "page_id": "gooaq-2021:p11",
+    "document_id": "gooaq-2021",
+    "page": 11,
+    "anchor_midpoint_char": 1570,
+    "anchor_snippet": "of invalid answers (to valid questions). Invalid answers\noften do not sufficiently address the topic of the\ngiven questi",
+    "strategy_chunks": {
+      "A": {
+        "chunk_id": "A:gooaq-2021:p11:c004",
+        "char_length": 500,
+        "text": "invalid questions. Often the questions are deemed invalid since they’re\nunder-defined or significantly deviate from the\nproper English. Figure 7 shows examples of invalid answers (to valid questions). Invalid answers\noften do not sufficiently address the topic of the\ngiven question.\n8https://github.com/SeleniumHQ/selenium/\nType: curr-conv\nQuestion: 1 euro is hoeveel nok?\nQuestion: how much is 45 in nigeria money?\nType: time-conv\nQuestion: 2 am eastern standard time?\nQuestion: what is the differe"
+      },
+      "B": {
+        "chunk_id": "B:gooaq-2021:p11:c002",
+        "char_length": 951,
+        "text": "We use Selenium8 which simulates browser experience. Note one cannot send too many queries to\nGoogle in a short span of time (due to various query\nlimits). Therefore, we ensured to have enough\ndelays between our queries (otherwise, we’d be\nblocked). Overall, this extraction process was done\nin 3 months. Subsequent to extracting the search\nHTML results, (2) we extract answer strings from\nthe HTML content of the search results. Answer\ntypes are also inferred at this stage, based on the\nHTML tags around the answer.\n\nC Invalid Questions and Answers\nBased on the human evaluation of GOOAQ in §3.2,\nwe should example of erroneous instances. Figure 6 shows examples of invalid questions. Often the questions are deemed invalid since they’re\nunder-defined or significantly deviate from the\nproper English. Figure 7 shows examples of invalid answers (to valid questions). Invalid answers\noften do not sufficiently address the topic of the\ngiven question."
+      },
+      "C": {
+        "chunk_id": "C:gooaq-2021:p11:c002",
+        "char_length": 951,
+        "text": "We use Selenium8 which simulates browser experience. Note one cannot send too many queries to\nGoogle in a short span of time (due to various query\nlimits). Therefore, we ensured to have enough\ndelays between our queries (otherwise, we’d be\nblocked). Overall, this extraction process was done\nin 3 months. Subsequent to extracting the search\nHTML results, (2) we extract answer strings from\nthe HTML content of the search results. Answer\ntypes are also inferred at this stage, based on the\nHTML tags around the answer.\n\nC Invalid Questions and Answers\nBased on the human evaluation of GOOAQ in §3.2,\nwe should example of erroneous instances. Figure 6 shows examples of invalid questions. Often the questions are deemed invalid since they’re\nunder-defined or significantly deviate from the\nproper English. Figure 7 shows examples of invalid answers (to valid questions). Invalid answers\noften do not sufficiently address the topic of the\ngiven question."
+      }
+    }
+  }
+]

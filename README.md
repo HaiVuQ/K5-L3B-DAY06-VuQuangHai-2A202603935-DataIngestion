@@ -45,3 +45,35 @@ Dùng cùng dữ liệu, model và câu hỏi cho cả ba cấu hình. Tách **1
 | Cách nộp bài | [SUBMISSION.md](SUBMISSION.md) |
 
 [data/format-example.json](data/format-example.json) chỉ minh họa định dạng, không phải corpus đủ điều kiện. Phần xử lý và benchmark do bạn tự hiện thực; không bắt buộc xây chatbot.
+
+---
+
+## 4. Hướng dẫn cài đặt và chạy lại thực nghiệm (Vũ Quang Hải — `2A202603935`)
+
+### Cấu trúc bài nộp
+- **Corpus gốc & Manifest**: `data/raw/*.pdf` (5 bài báo tiếng Anh từ Hugging Face `sentence-transformers/all-MiniLM-L6-v2`, **40 trang nội dung hợp lệ**) và `data/manifest.json`.
+- **Bộ câu hỏi Benchmark**: `benchmark/questions.json` (20 câu hỏi: `q01`–`q15` tập `dev`, `q16`–`q20` tập `test`).
+- **Mã nguồn Pipeline**: `starter/src/ingestion.py`, `starter/src/chunking.py`, `starter/src/embeddings.py`, `starter/src/store.py`, `starter/src/evaluation.py`, `starter/src/run.py`.
+- **Kết quả & Kiểm toán thủ công**:
+  - `results/ingestion_log.json`, `results/traces_top3.json`, `results/metrics_summary.json`, `results/coherence_samples_raw.json`
+  - `results/manual_audit_coherence.json` (`.md`), `results/manual_audit_metadata.json` (`.md`), `results/manual_audit_grounding.json` (`.md`)
+- **Báo cáo & Nhật ký**:
+  - Thông tin học viên: [STUDENT.md](STUDENT.md)
+  - Nhật ký thực nghiệm: [artifacts/experiment_log.csv](artifacts/experiment_log.csv)
+  - Báo cáo cá nhân: [report/individual/2A202603935_VuQuangHai.md](report/individual/2A202603935_VuQuangHai.md) (và [report/individual/MSSV_HoTen.md](report/individual/MSSV_HoTen.md))
+
+### Lệnh chạy tái lập (Windows PowerShell)
+```powershell
+cd starter
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python -m pip install -r requirements.txt
+Copy-Item .env.example .env
+
+# Kiểm tra kết nối Vector Store (Qdrant Local lưu trên đĩa hoặc PostgreSQL + pgvector)
+python scripts/check_setup.py
+
+# Chạy toàn bộ pipeline A / B / C (nạp idempotent 2 lần + xuất đầy đủ kết quả vào results/)
+python -m src.run
+```
+

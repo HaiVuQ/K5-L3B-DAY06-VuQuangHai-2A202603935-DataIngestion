@@ -1,0 +1,529 @@
+{
+  "corpus_name": "all-MiniLM-L6-v2 Training Datasets Benchmark Corpus (English PDFs)",
+  "topic": "Large-scale NLP Training Datasets for Sentence Embeddings (QA, Conversational Response Selection, and Summarization)",
+  "source_hub_url": "https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2",
+  "created_at": "2026-11-14T11:10:00+07:00",
+  "page_counting_rule": "Count only physical PDF pages containing substantive main-text, tables, or appendix analysis (>= 500 normalized characters of non-bibliographic text). Exclude cover-only, blank, table-of-contents, and references-only pages.",
+  "total_documents": 5,
+  "total_physical_pages": 49,
+  "total_valid_content_pages": 40,
+  "total_valid_normalized_characters": 167221,
+  "documents": [
+    {
+      "source_id": "gooaq-2021",
+      "title": "GOOAQ: Open Question Answering with Diverse Answer Types",
+      "source_path": "data/raw/gooaq_2021.pdf",
+      "source_url": "https://arxiv.org/pdf/2104.08727.pdf",
+      "referenced_in": "https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2",
+      "license_or_permission": "arXiv.org perpetual, non-exclusive license to distribute (arXiv:2104.08727v2); dataset released at github.com/allenai/gooaq under Apache-2.0",
+      "snapshot_or_version": "arXiv:2104.08727v2 (10 Sep 2021)",
+      "accessed_at": "2026-11-14T10:20:07+07:00",
+      "year": 2021,
+      "task_domain": "question_answering",
+      "valid_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        11,
+        12,
+        13
+      ],
+      "excluded_pages": [
+        10
+      ],
+      "exclusion_reasons": {
+        "10": "References-only page (bibliographic entries only)"
+      },
+      "physical_pages": 13,
+      "valid_page_count": 12,
+      "valid_normalized_char_count": 50649,
+      "pages_detail": [
+        {
+          "page": 1,
+          "page_id": "gooaq-2021:p01",
+          "included": true,
+          "raw_char_count": 4248,
+          "normalized_char_count": 4208
+        },
+        {
+          "page": 2,
+          "page_id": "gooaq-2021:p02",
+          "included": true,
+          "raw_char_count": 5134,
+          "normalized_char_count": 5111
+        },
+        {
+          "page": 3,
+          "page_id": "gooaq-2021:p03",
+          "included": true,
+          "raw_char_count": 4717,
+          "normalized_char_count": 4685
+        },
+        {
+          "page": 4,
+          "page_id": "gooaq-2021:p04",
+          "included": true,
+          "raw_char_count": 4148,
+          "normalized_char_count": 4115
+        },
+        {
+          "page": 5,
+          "page_id": "gooaq-2021:p05",
+          "included": true,
+          "raw_char_count": 4295,
+          "normalized_char_count": 4270
+        },
+        {
+          "page": 6,
+          "page_id": "gooaq-2021:p06",
+          "included": true,
+          "raw_char_count": 3842,
+          "normalized_char_count": 3719
+        },
+        {
+          "page": 7,
+          "page_id": "gooaq-2021:p07",
+          "included": true,
+          "raw_char_count": 4636,
+          "normalized_char_count": 4599
+        },
+        {
+          "page": 8,
+          "page_id": "gooaq-2021:p08",
+          "included": true,
+          "raw_char_count": 4232,
+          "normalized_char_count": 4196
+        },
+        {
+          "page": 9,
+          "page_id": "gooaq-2021:p09",
+          "included": true,
+          "raw_char_count": 4454,
+          "normalized_char_count": 4426
+        },
+        {
+          "page": 10,
+          "page_id": "gooaq-2021:p10",
+          "included": false,
+          "raw_char_count": 2693,
+          "normalized_char_count": 2666
+        },
+        {
+          "page": 11,
+          "page_id": "gooaq-2021:p11",
+          "included": true,
+          "raw_char_count": 3150,
+          "normalized_char_count": 3141
+        },
+        {
+          "page": 12,
+          "page_id": "gooaq-2021:p12",
+          "included": true,
+          "raw_char_count": 2954,
+          "normalized_char_count": 2936
+        },
+        {
+          "page": 13,
+          "page_id": "gooaq-2021:p13",
+          "included": true,
+          "raw_char_count": 5243,
+          "normalized_char_count": 5243
+        }
+      ]
+    },
+    {
+      "source_id": "paq-2021",
+      "title": "PAQ: 65 Million Probably-Asked Questions and What You Can Do With Them",
+      "source_path": "data/raw/paq_2021.pdf",
+      "source_url": "https://arxiv.org/pdf/2102.07033.pdf",
+      "referenced_in": "https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2",
+      "license_or_permission": "arXiv.org perpetual, non-exclusive license to distribute (arXiv:2102.07033v1); code/data at github.com/facebookresearch/PAQ (CC-BY-NC 4.0 / MIT)",
+      "snapshot_or_version": "arXiv:2102.07033v1 (13 Feb 2021)",
+      "accessed_at": "2026-11-14T10:20:07+07:00",
+      "year": 2021,
+      "task_domain": "question_answering",
+      "valid_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        15,
+        16
+      ],
+      "excluded_pages": [
+        12,
+        13,
+        14
+      ],
+      "exclusion_reasons": {
+        "12": "References-only page",
+        "13": "References-only page",
+        "14": "References-only page"
+      },
+      "physical_pages": 16,
+      "valid_page_count": 13,
+      "valid_normalized_char_count": 56190,
+      "pages_detail": [
+        {
+          "page": 1,
+          "page_id": "paq-2021:p01",
+          "included": true,
+          "raw_char_count": 4060,
+          "normalized_char_count": 4015
+        },
+        {
+          "page": 2,
+          "page_id": "paq-2021:p02",
+          "included": true,
+          "raw_char_count": 4700,
+          "normalized_char_count": 4667
+        },
+        {
+          "page": 3,
+          "page_id": "paq-2021:p03",
+          "included": true,
+          "raw_char_count": 3902,
+          "normalized_char_count": 3804
+        },
+        {
+          "page": 4,
+          "page_id": "paq-2021:p04",
+          "included": true,
+          "raw_char_count": 4631,
+          "normalized_char_count": 4600
+        },
+        {
+          "page": 5,
+          "page_id": "paq-2021:p05",
+          "included": true,
+          "raw_char_count": 4789,
+          "normalized_char_count": 4757
+        },
+        {
+          "page": 6,
+          "page_id": "paq-2021:p06",
+          "included": true,
+          "raw_char_count": 4685,
+          "normalized_char_count": 4657
+        },
+        {
+          "page": 7,
+          "page_id": "paq-2021:p07",
+          "included": true,
+          "raw_char_count": 3669,
+          "normalized_char_count": 3659
+        },
+        {
+          "page": 8,
+          "page_id": "paq-2021:p08",
+          "included": true,
+          "raw_char_count": 3814,
+          "normalized_char_count": 3803
+        },
+        {
+          "page": 9,
+          "page_id": "paq-2021:p09",
+          "included": true,
+          "raw_char_count": 4966,
+          "normalized_char_count": 4948
+        },
+        {
+          "page": 10,
+          "page_id": "paq-2021:p10",
+          "included": true,
+          "raw_char_count": 4676,
+          "normalized_char_count": 4642
+        },
+        {
+          "page": 11,
+          "page_id": "paq-2021:p11",
+          "included": true,
+          "raw_char_count": 4668,
+          "normalized_char_count": 4615
+        },
+        {
+          "page": 12,
+          "page_id": "paq-2021:p12",
+          "included": false,
+          "raw_char_count": 4956,
+          "normalized_char_count": 4909
+        },
+        {
+          "page": 13,
+          "page_id": "paq-2021:p13",
+          "included": false,
+          "raw_char_count": 5002,
+          "normalized_char_count": 4953
+        },
+        {
+          "page": 14,
+          "page_id": "paq-2021:p14",
+          "included": false,
+          "raw_char_count": 2555,
+          "normalized_char_count": 2525
+        },
+        {
+          "page": 15,
+          "page_id": "paq-2021:p15",
+          "included": true,
+          "raw_char_count": 4115,
+          "normalized_char_count": 4093
+        },
+        {
+          "page": 16,
+          "page_id": "paq-2021:p16",
+          "included": true,
+          "raw_char_count": 3952,
+          "normalized_char_count": 3930
+        }
+      ]
+    },
+    {
+      "source_id": "reddit-2019",
+      "title": "A Repository of Conversational Datasets",
+      "source_path": "data/raw/reddit_2019.pdf",
+      "source_url": "https://arxiv.org/pdf/1904.06472.pdf",
+      "referenced_in": "https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2",
+      "license_or_permission": "arXiv.org perpetual, non-exclusive license to distribute (arXiv:1904.06472v2); repository at github.com/PolyAI-LDN/conversational-datasets",
+      "snapshot_or_version": "arXiv:1904.06472v2 (29 May 2019)",
+      "accessed_at": "2026-11-14T10:20:07+07:00",
+      "year": 2019,
+      "task_domain": "dialogue",
+      "valid_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        10
+      ],
+      "excluded_pages": [
+        7,
+        8,
+        9
+      ],
+      "exclusion_reasons": {
+        "7": "References-only page",
+        "8": "References-only page",
+        "9": "References-only page"
+      },
+      "physical_pages": 10,
+      "valid_page_count": 7,
+      "valid_normalized_char_count": 25878,
+      "pages_detail": [
+        {
+          "page": 1,
+          "page_id": "reddit-2019:p01",
+          "included": true,
+          "raw_char_count": 4267,
+          "normalized_char_count": 4229
+        },
+        {
+          "page": 2,
+          "page_id": "reddit-2019:p02",
+          "included": true,
+          "raw_char_count": 4457,
+          "normalized_char_count": 4427
+        },
+        {
+          "page": 3,
+          "page_id": "reddit-2019:p03",
+          "included": true,
+          "raw_char_count": 4147,
+          "normalized_char_count": 4131
+        },
+        {
+          "page": 4,
+          "page_id": "reddit-2019:p04",
+          "included": true,
+          "raw_char_count": 4674,
+          "normalized_char_count": 4638
+        },
+        {
+          "page": 5,
+          "page_id": "reddit-2019:p05",
+          "included": true,
+          "raw_char_count": 3913,
+          "normalized_char_count": 3894
+        },
+        {
+          "page": 6,
+          "page_id": "reddit-2019:p06",
+          "included": true,
+          "raw_char_count": 3089,
+          "normalized_char_count": 3064
+        },
+        {
+          "page": 7,
+          "page_id": "reddit-2019:p07",
+          "included": false,
+          "raw_char_count": 4591,
+          "normalized_char_count": 4556
+        },
+        {
+          "page": 8,
+          "page_id": "reddit-2019:p08",
+          "included": false,
+          "raw_char_count": 4767,
+          "normalized_char_count": 4714
+        },
+        {
+          "page": 9,
+          "page_id": "reddit-2019:p09",
+          "included": false,
+          "raw_char_count": 945,
+          "normalized_char_count": 931
+        },
+        {
+          "page": 10,
+          "page_id": "reddit-2019:p10",
+          "included": true,
+          "raw_char_count": 1492,
+          "normalized_char_count": 1495
+        }
+      ]
+    },
+    {
+      "source_id": "searchqa-2017",
+      "title": "SearchQA: A New Q&A Dataset Augmented with Context from a Search Engine",
+      "source_path": "data/raw/searchqa_2017.pdf",
+      "source_url": "https://arxiv.org/pdf/1704.05179.pdf",
+      "referenced_in": "https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2",
+      "license_or_permission": "arXiv.org perpetual, non-exclusive license to distribute (arXiv:1704.05179v3); dataset at github.com/nyu-dl/SearchQA",
+      "snapshot_or_version": "arXiv:1704.05179v3 (11 Jun 2017)",
+      "accessed_at": "2026-11-14T10:42:20+07:00",
+      "year": 2017,
+      "task_domain": "question_answering",
+      "valid_pages": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "excluded_pages": [
+        5
+      ],
+      "exclusion_reasons": {
+        "5": "Primarily References and brief Acknowledgments (<250 chars of conclusion tail)"
+      },
+      "physical_pages": 5,
+      "valid_page_count": 4,
+      "valid_normalized_char_count": 16842,
+      "pages_detail": [
+        {
+          "page": 1,
+          "page_id": "searchqa-2017:p01",
+          "included": true,
+          "raw_char_count": 3786,
+          "normalized_char_count": 3754
+        },
+        {
+          "page": 2,
+          "page_id": "searchqa-2017:p02",
+          "included": true,
+          "raw_char_count": 4256,
+          "normalized_char_count": 4219
+        },
+        {
+          "page": 3,
+          "page_id": "searchqa-2017:p03",
+          "included": true,
+          "raw_char_count": 4476,
+          "normalized_char_count": 4424
+        },
+        {
+          "page": 4,
+          "page_id": "searchqa-2017:p04",
+          "included": true,
+          "raw_char_count": 4483,
+          "normalized_char_count": 4445
+        },
+        {
+          "page": 5,
+          "page_id": "searchqa-2017:p05",
+          "included": false,
+          "raw_char_count": 3246,
+          "normalized_char_count": 3216
+        }
+      ]
+    },
+    {
+      "source_id": "wikihow-2018",
+      "title": "WikiHow: A Large Scale Text Summarization Dataset",
+      "source_path": "data/raw/wikihow_2018.pdf",
+      "source_url": "https://arxiv.org/pdf/1810.09305.pdf",
+      "referenced_in": "https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2",
+      "license_or_permission": "arXiv.org perpetual, non-exclusive license to distribute (arXiv:1810.09305v1); dataset at github.com/mahnazkoupaee/WikiHow-Dataset",
+      "snapshot_or_version": "arXiv:1810.09305v1 (18 Oct 2018)",
+      "accessed_at": "2026-11-14T10:37:55+07:00",
+      "year": 2018,
+      "task_domain": "summarization",
+      "valid_pages": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "excluded_pages": [
+        5
+      ],
+      "exclusion_reasons": {
+        "5": "References-only page"
+      },
+      "physical_pages": 5,
+      "valid_page_count": 4,
+      "valid_normalized_char_count": 17662,
+      "pages_detail": [
+        {
+          "page": 1,
+          "page_id": "wikihow-2018:p01",
+          "included": true,
+          "raw_char_count": 3616,
+          "normalized_char_count": 3584
+        },
+        {
+          "page": 2,
+          "page_id": "wikihow-2018:p02",
+          "included": true,
+          "raw_char_count": 4556,
+          "normalized_char_count": 4518
+        },
+        {
+          "page": 3,
+          "page_id": "wikihow-2018:p03",
+          "included": true,
+          "raw_char_count": 5458,
+          "normalized_char_count": 5438
+        },
+        {
+          "page": 4,
+          "page_id": "wikihow-2018:p04",
+          "included": true,
+          "raw_char_count": 4139,
+          "normalized_char_count": 4122
+        },
+        {
+          "page": 5,
+          "page_id": "wikihow-2018:p05",
+          "included": false,
+          "raw_char_count": 3217,
+          "normalized_char_count": 3166
+        }
+      ]
+    }
+  ]
+}
