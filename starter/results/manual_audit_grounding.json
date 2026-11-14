@@ -39,7 +39,7 @@
       "question_id": "q16",
       "question_type": "direct",
       "question": "When evaluating extrinsic utility on the ELI5 dataset, what scores did T5-small and T5-11B trained only on GOOAQ achieve compared to the same models trained on ELI5?",
-      "expected_answer": "T5-small and T5-11B trained on GOOAQ (no ELI5) achieved 21.7 (or 21.8 in text) and 22.9 respectively, outperforming T5-small (19.0) and T5-11B (22.7) trained on ELI5.",
+      "expected_answer": "T5-small and T5-11B trained on GOOAQ (no ELI5) achieved 21.7 (21.8 in the prose summary) and 22.9 respectively, outperforming T5-small (19.0) and T5-11B (22.7) trained on ELI5.",
       "scores": {
         "A": {
           "score": 2,
@@ -109,7 +109,7 @@
       "question_id": "q18",
       "question_type": "metadata_filter",
       "question": "In the 2019 dialogue dataset repository, how many comments, conversation threads, and total TensorFlow examples are included in the Reddit dataset from 2015 to 2018?",
-      "expected_answer": "The Reddit data from 2015 to 2018 consists of 3,680,746,776 comments in 256,095,216 threads, creating 727,013,715 TensorFlow examples (split into 654,396,778 train and 72,616,937 test).",
+      "expected_answer": "The Reddit data from 2015 to 2018 inclusive consists of 3,680,746,776 comments in 256,095,216 threads, creating 727,013,715 TensorFlow examples in total.",
       "scores": {
         "A": {
           "score": 1,
@@ -144,7 +144,7 @@
       "question_id": "q19",
       "question_type": "condition_exception",
       "question": "During the cleaning of SearchQA snippets, what specific terms or attributes caused a snippet to be removed so answers could not be found trivially, and what maximum answer length was retained?",
-      "expected_answer": "Snippets were removed if they included the air-date of the Jeopardy! episode, the exact copy of the question, or the terms 'Jeopardy!', 'quiz', or 'trivia'; only tuples with answers of three words or less were kept.",
+      "expected_answer": "Snippets were removed if they included the air-date of the Jeopardy! episode, the exact copy of the question, or the terms 'Jeopardy!', 'quiz', or 'trivia'; only tuples whose answers were three or less words long were kept.",
       "scores": {
         "A": {
           "score": 0,
@@ -179,7 +179,7 @@
       "question_id": "q20",
       "question_type": "metadata_filter",
       "question": "In the 2018 text summarization paper, why does the Lead-3 baseline perform much better on CNN/Daily Mail than on WikiHow, and what ROUGE-L score does Pointer-generator + coverage achieve on WikiHow?",
-      "expected_answer": "News articles in CNN/Daily Mail follow the journalistic Inverted Pyramid style where the opening sentences contain the most important information, whereas WikiHow articles describe procedural steps of similar importance throughout; Pointer-generator + coverage achieves 26.54 ROUGE-L on WikiHow.",
+      "expected_answer": "Summarization baselines perform much better on CNN/Daily Mail with Lead-3 outperforming other baselines due to the news inverted pyramid writing style, whereas poor Lead-3 performance on WikiHow reflects the different writing styles in its articles; Pointer-generator + coverage achieves 26.54 ROUGE-L on WikiHow.",
       "scores": {
         "A": {
           "score": 1,

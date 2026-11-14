@@ -1,5 +1,7 @@
 {
-  "executed_at": "2026-11-14T23:26:59.311676+07:00",
+  "executed_at": "2026-11-14T15:37:25.874260+07:00",
+  "evaluation_recomputed_at": "2026-11-15T00:21:30.880748+07:00",
+  "execution_and_timing_note": "Full PDF loading (22.4365s), chunking, ONNX embedding, and 2x idempotent Qdrant upsert were executed and timed at executed_at (2026-11-14T15:37:25.874260+07:00: A=316.2428s, B=221.7665s, C=194.1171s). Retrieval evaluation (evaluate_query and summarize) was re-run at evaluation_recomputed_at against the persisted top-3 hits after refining benchmark evidence quotes and q20 dual-quote checking.",
   "environment": {
     "python_package_versions": {
       "qdrant_client": "1.20.0",
