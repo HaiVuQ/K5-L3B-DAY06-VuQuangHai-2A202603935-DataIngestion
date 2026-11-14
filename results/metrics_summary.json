@@ -1,5 +1,5 @@
 {
-  "executed_at": "2026-11-14T11:40:46.387904+07:00",
+  "executed_at": "2026-11-14T15:37:25.874260+07:00",
   "environment": {
     "python_package_versions": {
       "qdrant_client": "1.20.0",
@@ -21,7 +21,7 @@
     "total_physical_pages": 49,
     "total_valid_content_pages": 40,
     "total_normalized_characters": 167221,
-    "document_load_seconds": 22.9672
+    "document_load_seconds": 22.4365
   },
   "strategy_ingestion_stats": {
     "A": {
@@ -39,10 +39,10 @@
       "median_char_length_p50": 500,
       "p90_char_length": 500,
       "stdev_char_length": 89.0,
-      "chunking_time_sec": 0.0148,
-      "embedding_time_sec": 244.0015,
-      "upsert_and_reingest_verify_sec": 102.8754,
-      "total_ingest_time_sec": 346.8917,
+      "chunking_time_sec": 0.0608,
+      "embedding_time_sec": 187.4788,
+      "upsert_and_reingest_verify_sec": 128.7033,
+      "total_ingest_time_sec": 316.2428,
       "cost_usd": 0.0,
       "count_after_first_ingest": 390,
       "count_after_reingest": 390,
@@ -63,10 +63,10 @@
       "median_char_length_p50": 754,
       "p90_char_length": 966,
       "stdev_char_length": 194.6,
-      "chunking_time_sec": 0.5119,
-      "embedding_time_sec": 186.858,
-      "upsert_and_reingest_verify_sec": 11.555,
-      "total_ingest_time_sec": 198.9248,
+      "chunking_time_sec": 0.3955,
+      "embedding_time_sec": 148.3808,
+      "upsert_and_reingest_verify_sec": 72.9902,
+      "total_ingest_time_sec": 221.7665,
       "cost_usd": 0.0,
       "count_after_first_ingest": 232,
       "count_after_reingest": 232,
@@ -87,10 +87,10 @@
       "median_char_length_p50": 754,
       "p90_char_length": 966,
       "stdev_char_length": 194.6,
-      "chunking_time_sec": 0.649,
-      "embedding_time_sec": 174.7236,
-      "upsert_and_reingest_verify_sec": 15.8331,
-      "total_ingest_time_sec": 191.2058,
+      "chunking_time_sec": 0.4148,
+      "embedding_time_sec": 176.5985,
+      "upsert_and_reingest_verify_sec": 17.1038,
+      "total_ingest_time_sec": 194.1171,
       "cost_usd": 0.0,
       "count_after_first_ingest": 232,
       "count_after_reingest": 232,
@@ -122,7 +122,7 @@
         "evidence_hit_at_3_fraction": "2/5",
         "evidence_hit_at_3_pct": 40.0,
         "gold_page_hit_at_3_fraction": "5/5",
-        "evidence_split_errors": 1,
+        "evidence_split_errors": 0,
         "filter_questions_count": 2,
         "filter_compliance_fraction": "2/2",
         "filter_compliance_pct": 100.0

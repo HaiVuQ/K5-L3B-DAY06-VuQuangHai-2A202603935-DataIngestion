@@ -1,7 +1,5 @@
 [
   {
-    "strategy": "A",
-    "filter_applied_in_search": null,
     "question_id": "q01",
     "split": "dev",
     "question_type": "direct",
@@ -111,11 +109,10 @@
         "matched_gold": null,
         "filter_compliant": null
       }
-    ]
+    ],
+    "strategy": "A"
   },
   {
-    "strategy": "A",
-    "filter_applied_in_search": null,
     "question_id": "q02",
     "split": "dev",
     "question_type": "condition_exception",
@@ -219,11 +216,10 @@
         "matched_gold": null,
         "filter_compliant": null
       }
-    ]
+    ],
+    "strategy": "A"
   },
   {
-    "strategy": "A",
-    "filter_applied_in_search": null,
     "question_id": "q03",
     "split": "dev",
     "question_type": "condition_exception",
@@ -231,7 +227,7 @@
     "expected_answer": "Workers had to be based in a predominantly native English-speaking country (USA, Canada, UK, Australia), have completed at least 5000 HITs with >= 99% approval rate, and pass a qualification test of half-a-dozen questions.",
     "gold_source_id": "gooaq-2021",
     "gold_page": 4,
-    "evidence_quote": "we required workers to be based in a country with a population predominantly of native English speakers (e.g., USA, Canada, UK, and Australia) and have completed at least 5000 HITs with ≥ 99% assignment approval rate.",
+    "evidence_quote": "we required workers to be based in a country with a population predominantly of native English speakers (e.g., USA, Canada, UK, and Australia) and have completed at least 5000 HITs with ≥ 99% assignment approval rate. Additionally, we have a qualification test with half-a-dozen questions all of which need to be answered correctly by our annotators.",
     "alternative_gold": [],
     "filter": null,
     "hit_at_1": false,
@@ -294,7 +290,7 @@
         "source_page_match": true,
         "evidence_hit": false,
         "partial_evidence_on_gold_page": false,
-        "evidence_token_coverage_on_gold_page": 0.242,
+        "evidence_token_coverage_on_gold_page": 0.283,
         "matched_gold": null,
         "filter_compliant": null
       },
@@ -327,11 +323,10 @@
         "matched_gold": null,
         "filter_compliant": null
       }
-    ]
+    ],
+    "strategy": "A"
   },
   {
-    "strategy": "A",
-    "filter_applied_in_search": null,
     "question_id": "q04",
     "split": "dev",
     "question_type": "paraphrase",
@@ -339,7 +334,7 @@
     "expected_answer": "They selected the training instances most dissimilar to the evaluation splits, measuring similarity by the maximum token-overlap with any dev/test instance over both questions and answers.",
     "gold_source_id": "gooaq-2021",
     "gold_page": 5,
-    "evidence_quote": "To minimize this issue, we create training splits by selecting the most dissimilar instances to our evaluation splits. The measure of similarity for each training instance is computed as the maximum amount of tokenoverlap with any of the instances in the test/dev set",
+    "evidence_quote": "To minimize this issue, we create training splits by selecting the most dissimilar instances to our evaluation splits. The measure of similarity for each training instance is computed as the maximum amount of tokenoverlap with any of the instances in the test/dev set (computed over both questions and answers).",
     "alternative_gold": [],
     "filter": null,
     "hit_at_1": false,
@@ -435,11 +430,10 @@
         "matched_gold": null,
         "filter_compliant": null
       }
-    ]
+    ],
+    "strategy": "A"
   },
   {
-    "strategy": "A",
-    "filter_applied_in_search": null,
     "question_id": "q05",
     "split": "dev",
     "question_type": "direct",
@@ -543,11 +537,10 @@
         "matched_gold": null,
         "filter_compliant": null
       }
-    ]
+    ],
+    "strategy": "A"
   },
   {
-    "strategy": "A",
-    "filter_applied_in_search": null,
     "question_id": "q06",
     "split": "dev",
     "question_type": "paraphrase",
@@ -651,11 +644,10 @@
         "matched_gold": null,
         "filter_compliant": null
       }
-    ]
+    ],
+    "strategy": "A"
   },
   {
-    "strategy": "A",
-    "filter_applied_in_search": null,
     "question_id": "q07",
     "split": "dev",
     "question_type": "condition_exception",
@@ -759,16 +751,15 @@
         "matched_gold": null,
         "filter_compliant": null
       }
-    ]
+    ],
+    "strategy": "A"
   },
   {
-    "strategy": "A",
-    "filter_applied_in_search": null,
     "question_id": "q08",
     "split": "dev",
     "question_type": "direct",
     "question": "How many filtered QA-pairs are in the final PAQ knowledge base, and from how many extracted answer spans and unique generated questions were they obtained?",
-    "expected_answer": "PAQ consists of 65M (64.9M) filtered QA-pairs, obtained from 165M (165.7M) extracted answer spans and 279M (279.2M) unique questions before global filtering.",
+    "expected_answer": "PAQ consists of 65M filtered QA-pairs, obtained from 165M extracted answer spans and 279M unique questions before applying global filtering.",
     "gold_source_id": "paq-2021",
     "gold_page": 6,
     "evidence_quote": "As shown in Table 1, PAQ consists of 65M filtered QA pairs.6 This was obtained by extracting 165M answer spans and generating 279M unique questions before applying global filtering.",
@@ -867,11 +858,10 @@
         "matched_gold": "paq-2021:p06",
         "filter_compliant": null
       }
-    ]
+    ],
+    "strategy": "A"
   },
   {
-    "strategy": "A",
-    "filter_applied_in_search": null,
     "question_id": "q09",
     "split": "dev",
     "question_type": "condition_exception",
@@ -975,11 +965,10 @@
         "matched_gold": null,
         "filter_compliant": null
       }
-    ]
+    ],
+    "strategy": "A"
   },
   {
-    "strategy": "A",
-    "filter_applied_in_search": null,
     "question_id": "q10",
     "split": "dev",
     "question_type": "condition_exception",
@@ -1083,11 +1072,10 @@
         "matched_gold": null,
         "filter_compliant": null
       }
-    ]
+    ],
+    "strategy": "A"
   },
   {
-    "strategy": "A",
-    "filter_applied_in_search": null,
     "question_id": "q11",
     "split": "dev",
     "question_type": "paraphrase",
@@ -1197,11 +1185,10 @@
         "matched_gold": null,
         "filter_compliant": null
       }
-    ]
+    ],
+    "strategy": "A"
   },
   {
-    "strategy": "A",
-    "filter_applied_in_search": null,
     "question_id": "q12",
     "split": "dev",
     "question_type": "metadata_filter",
@@ -1209,7 +1196,7 @@
     "expected_answer": "TF-IDF achieves 26.7 (Reddit), 10.9 (OpenSubtitles), 51.8 (AmazonQA); BM25 achieves 27.6, 10.9, 52.3; POLYAI-ENCODER achieves 61.3, 30.6, and 84.2.",
     "gold_source_id": "reddit-2019",
     "gold_page": 6,
-    "evidence_quote": "Reddit OpenSubtitles AmazonQA\nTF-IDF 26.7 10.9 51.8\nBM25 27.6 10.9 52.3",
+    "evidence_quote": "Reddit OpenSubtitles AmazonQA\nTF-IDF 26.7 10.9 51.8\nBM25 27.6 10.9 52.3\nUSE -SIM 36.6 13.6 47.6\nUSE -MAP 40.8 15.8 54.4\nUSE -LARGE -SIM 41.4 14.9 51.3\nUSE -LARGE -MAP 47.7 18.0 61.9\nELMO -SIM 12.5 9.5 16.0\nELMO -MAP 19.3 12.3 33.0\nBERT-SMALL -SIM 17.1 13.8 27.8\nBERT-SMALL -MAP 24.5 17.5 45.8\nBERT-LARGE -SIM 14.8 12.2 25.9\nBERT-LARGE -MAP 24.0 16.8 44.1\nPOLYAI-ENCODER 61.3 30.6 84.2",
     "alternative_gold": [],
     "filter": {
       "year": 2019,
@@ -1246,7 +1233,7 @@
         "source_page_match": true,
         "evidence_hit": false,
         "partial_evidence_on_gold_page": false,
-        "evidence_token_coverage_on_gold_page": 0.25,
+        "evidence_token_coverage_on_gold_page": 0.11,
         "matched_gold": null,
         "filter_compliant": true
       },
@@ -1308,11 +1295,10 @@
         "matched_gold": "reddit-2019:p06",
         "filter_compliant": true
       }
-    ]
+    ],
+    "strategy": "A"
   },
   {
-    "strategy": "A",
-    "filter_applied_in_search": null,
     "question_id": "q13",
     "split": "dev",
     "question_type": "metadata_filter",
@@ -1419,16 +1405,15 @@
         "matched_gold": null,
         "filter_compliant": true
       }
-    ]
+    ],
+    "strategy": "A"
   },
   {
-    "strategy": "A",
-    "filter_applied_in_search": null,
     "question_id": "q14",
     "split": "dev",
     "question_type": "metadata_filter",
     "question": "For the summarization dataset published in 2018, how were articles with only bold lines filtered out, and how many articles and summaries remained in the final dataset?",
-    "expected_answer": "A size threshold was used to remove pairs where the summary was longer than the article size, leaving a final dataset of 204,004 articles and their summaries (from 230,843 generated pairs).",
+    "expected_answer": "A size threshold was used to remove pairs where the summary was longer than the article size, leaving a final dataset of 204,004 articles and their summaries.",
     "gold_source_id": "wikihow-2018",
     "gold_page": 3,
     "evidence_quote": "To filter out these articles, we used a size threshold so that pairs with summaries longer than the article size will be removed. The final dataset is made of 204, 004 articles and their summaries.",
@@ -1530,11 +1515,10 @@
         "matched_gold": null,
         "filter_compliant": true
       }
-    ]
+    ],
+    "strategy": "A"
   },
   {
-    "strategy": "A",
-    "filter_applied_in_search": null,
     "question_id": "q15",
     "split": "dev",
     "question_type": "direct",
@@ -1638,20 +1622,25 @@
         "matched_gold": null,
         "filter_compliant": null
       }
-    ]
+    ],
+    "strategy": "A"
   },
   {
-    "strategy": "A",
-    "filter_applied_in_search": null,
     "question_id": "q16",
     "split": "test",
     "question_type": "direct",
     "question": "When evaluating extrinsic utility on the ELI5 dataset, what scores did T5-small and T5-11B trained only on GOOAQ achieve compared to the same models trained on ELI5?",
-    "expected_answer": "T5-small and T5-11B trained on GOOAQ (no ELI5) achieved 21.7 (or 21.8 in text) and 22.9 respectively, outperforming T5-small (19.0) and T5-11B (22.7) trained on ELI5.",
+    "expected_answer": "T5-small and T5-11B trained on GOOAQ (no ELI5) achieved 21.7 (21.8 in the prose summary) and 22.9 respectively, outperforming T5-small (19.0) and T5-11B (22.7) trained on ELI5.",
     "gold_source_id": "gooaq-2021",
     "gold_page": 8,
     "evidence_quote": "T5-small G OOAQ (no ELI5) no 21.7\nT5-11B G OOAQ (no ELI5) no 22.9\nT5-small ELI5 no 19.0\nT5-11B ELI5 no 22.7",
-    "alternative_gold": [],
+    "alternative_gold": [
+      {
+        "gold_source_id": "gooaq-2021",
+        "gold_page": 8,
+        "evidence_quote": "Our evaluation, summarized in Table 3, shows that both our small and 11B T5 models trained on GOOAQ’s snippet-answer subset (no training on ELI5) perform quite well (21.8 and 22.9, respectively) when evaluated on ELI5. They are even better than the same architectures trained with ELI5’s own training data (19.0 and 22.7, resp.)"
+      }
+    ],
     "filter": null,
     "hit_at_1": true,
     "evidence_hit_at_3": true,
@@ -1746,11 +1735,10 @@
         "matched_gold": null,
         "filter_compliant": null
       }
-    ]
+    ],
+    "strategy": "A"
   },
   {
-    "strategy": "A",
-    "filter_applied_in_search": null,
     "question_id": "q17",
     "split": "test",
     "question_type": "paraphrase",
@@ -1860,16 +1848,15 @@
         "matched_gold": "paq-2021:p02",
         "filter_compliant": null
       }
-    ]
+    ],
+    "strategy": "A"
   },
   {
-    "strategy": "A",
-    "filter_applied_in_search": null,
     "question_id": "q18",
     "split": "test",
     "question_type": "metadata_filter",
     "question": "In the 2019 dialogue dataset repository, how many comments, conversation threads, and total TensorFlow examples are included in the Reddit dataset from 2015 to 2018?",
-    "expected_answer": "The Reddit data from 2015 to 2018 consists of 3,680,746,776 comments in 256,095,216 threads, creating 727,013,715 TensorFlow examples (split into 654,396,778 train and 72,616,937 test).",
+    "expected_answer": "The Reddit data from 2015 to 2018 inclusive consists of 3,680,746,776 comments in 256,095,216 threads, creating 727,013,715 TensorFlow examples in total.",
     "gold_source_id": "reddit-2019",
     "gold_page": 3,
     "evidence_quote": "The data from 2015 to 2018 inclusive consists of 3,680,746,776 comments, in 256,095,216 threads. In total, 727,013,715 Tensorflow examples are created from this data.",
@@ -1971,31 +1958,30 @@
         "matched_gold": null,
         "filter_compliant": true
       }
-    ]
+    ],
+    "strategy": "A"
   },
   {
-    "strategy": "A",
-    "filter_applied_in_search": null,
     "question_id": "q19",
     "split": "test",
     "question_type": "condition_exception",
     "question": "During the cleaning of SearchQA snippets, what specific terms or attributes caused a snippet to be removed so answers could not be found trivially, and what maximum answer length was retained?",
-    "expected_answer": "Snippets were removed if they included the air-date of the Jeopardy! episode, the exact copy of the question, or the terms 'Jeopardy!', 'quiz', or 'trivia'; only tuples with answers of three words or less were kept.",
+    "expected_answer": "Snippets were removed if they included the air-date of the Jeopardy! episode, the exact copy of the question, or the terms 'Jeopardy!', 'quiz', or 'trivia'; only tuples whose answers were three or less words long were kept.",
     "gold_source_id": "searchqa-2017",
     "gold_page": 2,
-    "evidence_quote": "First, we removed any snippet returned that included the air-date of the Jeopardy! episode, the exact copy of the question,",
+    "evidence_quote": "First, we removed any snippet returned that included the air-date of the Jeopardy! episode, the exact copy of the question,\n1 The dataset can be found athttps://github.com/\nnyu-dl/SearchQA.\n2http://j-archive.com\nFigure 1: One example in .json format.\nor a term “Jeopardy!”, “quiz” or “trivia”, to ensure that the answer could not be found trivially by a process of word/phrase matching. Furthermore, we manually checked any URL, from which these removed snippets were taken, that occurs more than 50 times and removed any that explicitly contains Jeopardy! question-answer pairs.\nAmong the remaining question-answer-context tuples, we removed any tuple whose context did not include the answer. This was done mainly for computational efficiency in building a questionanswering system using the proposed dataset. We kept only those tuples whose answers were three or less words long.",
     "alternative_gold": [
       {
         "gold_source_id": "searchqa-2017",
         "gold_page": 2,
-        "evidence_quote": "or a term “Jeopardy!”, “quiz” or “trivia”, to ensure that the answer could not be found trivially by a process of word/phrase matching."
+        "evidence_quote": "or a term “Jeopardy!”, “quiz” or “trivia”, to ensure that the answer could not be found trivially by a process of word/phrase matching.\nWe kept only those tuples whose answers were three or less words long."
       }
     ],
     "filter": null,
     "hit_at_1": false,
     "evidence_hit_at_3": false,
     "gold_page_retrieved_in_top3": true,
-    "evidence_split_error": true,
+    "evidence_split_error": false,
     "filter_top3_compliant": null,
     "top_3_hits": [
       {
@@ -2022,8 +2008,8 @@
         },
         "source_page_match": true,
         "evidence_hit": false,
-        "partial_evidence_on_gold_page": true,
-        "evidence_token_coverage_on_gold_page": 0.524,
+        "partial_evidence_on_gold_page": false,
+        "evidence_token_coverage_on_gold_page": 0.294,
         "matched_gold": null,
         "filter_compliant": null
       },
@@ -2085,19 +2071,18 @@
         "matched_gold": null,
         "filter_compliant": null
       }
-    ]
+    ],
+    "strategy": "A"
   },
   {
-    "strategy": "A",
-    "filter_applied_in_search": null,
     "question_id": "q20",
     "split": "test",
     "question_type": "metadata_filter",
     "question": "In the 2018 text summarization paper, why does the Lead-3 baseline perform much better on CNN/Daily Mail than on WikiHow, and what ROUGE-L score does Pointer-generator + coverage achieve on WikiHow?",
-    "expected_answer": "News articles in CNN/Daily Mail follow the journalistic Inverted Pyramid style where the opening sentences contain the most important information, whereas WikiHow articles describe procedural steps of similar importance throughout; Pointer-generator + coverage achieves 26.54 ROUGE-L on WikiHow.",
+    "expected_answer": "Summarization baselines perform much better on CNN/Daily Mail with Lead-3 outperforming other baselines due to the news inverted pyramid writing style, whereas poor Lead-3 performance on WikiHow reflects the different writing styles in its articles; Pointer-generator + coverage achieves 26.54 ROUGE-L on WikiHow.",
     "gold_source_id": "wikihow-2018",
     "gold_page": 4,
-    "evidence_quote": "Pointer-generator + coverage 39.53 17.28 36.38 17.32 28.53 9.23 26.54 10.56",
+    "evidence_quote": "Pointer-generator + coverage 39.53 17.28 36.38 17.32 28.53 9.23 26.54 10.56\nLead-3 baseline 40.34 17.70 36.57 20.48 26.00 7.24 24.25 12.85",
     "alternative_gold": [],
     "filter": {
       "year": 2018,
@@ -2134,7 +2119,7 @@
         "source_page_match": true,
         "evidence_hit": false,
         "partial_evidence_on_gold_page": false,
-        "evidence_token_coverage_on_gold_page": 0.0,
+        "evidence_token_coverage_on_gold_page": 0.095,
         "matched_gold": null,
         "filter_compliant": true
       },
@@ -2163,7 +2148,7 @@
         "source_page_match": true,
         "evidence_hit": false,
         "partial_evidence_on_gold_page": false,
-        "evidence_token_coverage_on_gold_page": 0.0,
+        "evidence_token_coverage_on_gold_page": 0.048,
         "matched_gold": null,
         "filter_compliant": true
       },
@@ -2196,11 +2181,10 @@
         "matched_gold": null,
         "filter_compliant": true
       }
-    ]
+    ],
+    "strategy": "A"
   },
   {
-    "strategy": "B",
-    "filter_applied_in_search": null,
     "question_id": "q01",
     "split": "dev",
     "question_type": "direct",
@@ -2307,11 +2291,10 @@
         "matched_gold": null,
         "filter_compliant": null
       }
-    ]
+    ],
+    "strategy": "B"
   },
   {
-    "strategy": "B",
-    "filter_applied_in_search": null,
     "question_id": "q02",
     "split": "dev",
     "question_type": "condition_exception",
@@ -2412,11 +2395,10 @@
         "matched_gold": null,
         "filter_compliant": null
       }
-    ]
+    ],
+    "strategy": "B"
   },
   {
-    "strategy": "B",
-    "filter_applied_in_search": null,
     "question_id": "q03",
     "split": "dev",
     "question_type": "condition_exception",
@@ -2424,7 +2406,7 @@
     "expected_answer": "Workers had to be based in a predominantly native English-speaking country (USA, Canada, UK, Australia), have completed at least 5000 HITs with >= 99% approval rate, and pass a qualification test of half-a-dozen questions.",
     "gold_source_id": "gooaq-2021",
     "gold_page": 4,
-    "evidence_quote": "we required workers to be based in a country with a population predominantly of native English speakers (e.g., USA, Canada, UK, and Australia) and have completed at least 5000 HITs with ≥ 99% assignment approval rate.",
+    "evidence_quote": "we required workers to be based in a country with a population predominantly of native English speakers (e.g., USA, Canada, UK, and Australia) and have completed at least 5000 HITs with ≥ 99% assignment approval rate. Additionally, we have a qualification test with half-a-dozen questions all of which need to be answered correctly by our annotators.",
     "alternative_gold": [],
     "filter": null,
     "hit_at_1": false,
@@ -2457,7 +2439,7 @@
         "source_page_match": true,
         "evidence_hit": false,
         "partial_evidence_on_gold_page": false,
-        "evidence_token_coverage_on_gold_page": 0.273,
+        "evidence_token_coverage_on_gold_page": 0.321,
         "matched_gold": null,
         "filter_compliant": null
       },
@@ -2513,15 +2495,14 @@
         "source_page_match": true,
         "evidence_hit": false,
         "partial_evidence_on_gold_page": false,
-        "evidence_token_coverage_on_gold_page": 0.333,
+        "evidence_token_coverage_on_gold_page": 0.396,
         "matched_gold": null,
         "filter_compliant": null
       }
-    ]
+    ],
+    "strategy": "B"
   },
   {
-    "strategy": "B",
-    "filter_applied_in_search": null,
     "question_id": "q04",
     "split": "dev",
     "question_type": "paraphrase",
@@ -2529,7 +2510,7 @@
     "expected_answer": "They selected the training instances most dissimilar to the evaluation splits, measuring similarity by the maximum token-overlap with any dev/test instance over both questions and answers.",
     "gold_source_id": "gooaq-2021",
     "gold_page": 5,
-    "evidence_quote": "To minimize this issue, we create training splits by selecting the most dissimilar instances to our evaluation splits. The measure of similarity for each training instance is computed as the maximum amount of tokenoverlap with any of the instances in the test/dev set",
+    "evidence_quote": "To minimize this issue, we create training splits by selecting the most dissimilar instances to our evaluation splits. The measure of similarity for each training instance is computed as the maximum amount of tokenoverlap with any of the instances in the test/dev set (computed over both questions and answers).",
     "alternative_gold": [],
     "filter": null,
     "hit_at_1": false,
@@ -2622,11 +2603,10 @@
         "matched_gold": null,
         "filter_compliant": null
       }
-    ]
+    ],
+    "strategy": "B"
   },
   {
-    "strategy": "B",
-    "filter_applied_in_search": null,
     "question_id": "q05",
     "split": "dev",
     "question_type": "direct",
@@ -2727,11 +2707,10 @@
         "matched_gold": null,
         "filter_compliant": null
       }
-    ]
+    ],
+    "strategy": "B"
   },
   {
-    "strategy": "B",
-    "filter_applied_in_search": null,
     "question_id": "q06",
     "split": "dev",
     "question_type": "paraphrase",
@@ -2832,11 +2811,10 @@
         "matched_gold": null,
         "filter_compliant": null
       }
-    ]
+    ],
+    "strategy": "B"
   },
   {
-    "strategy": "B",
-    "filter_applied_in_search": null,
     "question_id": "q07",
     "split": "dev",
     "question_type": "condition_exception",
@@ -2885,7 +2863,7 @@
         "rank": 2,
         "chunk_id": "B:paq-2021:p07:c003",
         "text": "comparison to recent state-of-the-art\nsystems. Highest score indicated in bold, highest non-retrieve-and-read model underlined.\n\n5.2.1 Ablating PAQ using RePAQ\nTable 4 shows RePAQ’s accuracy when using different PAQ variants. To establish the effect of filtering,\nwe evaluate RePAQ with unfiltered, locally-filtered\nand globally-filtered QA-pairs on PAQL,1. Comparing rows 2, 3 and 4 shows that global filtering is\ncrucial, leading to a 9% and 14% improvement over\nlocally-filtered and unfiltered datasets respectively.\n\nWe also note a general trend in Table 4 that\nadding more globally-filtered questions improves\naccuracy. Rows 4 and 5 show that using four questions per answer span is better than generating one\n(+0.9%), and Rows 5,6 and 7 show that combining PAQN E and PAQL results in a further 1.2%\nimprovement. Empirically we did not observe any\ncases where increasing the number of globally filtered QA-pairs reduced accuracy, even when there\nwere millions of QA-pairs already.",
-        "score": 0.845755,
+        "score": 0.845754,
         "metadata": {
           "title": "PAQ: 65 Million Probably-Asked Questions and What You Can Do With Them",
           "year": 2021,
@@ -2937,16 +2915,15 @@
         "matched_gold": "paq-2021:p04",
         "filter_compliant": null
       }
-    ]
+    ],
+    "strategy": "B"
   },
   {
-    "strategy": "B",
-    "filter_applied_in_search": null,
     "question_id": "q08",
     "split": "dev",
     "question_type": "direct",
     "question": "How many filtered QA-pairs are in the final PAQ knowledge base, and from how many extracted answer spans and unique generated questions were they obtained?",
-    "expected_answer": "PAQ consists of 65M (64.9M) filtered QA-pairs, obtained from 165M (165.7M) extracted answer spans and 279M (279.2M) unique questions before global filtering.",
+    "expected_answer": "PAQ consists of 65M filtered QA-pairs, obtained from 165M extracted answer spans and 279M unique questions before applying global filtering.",
     "gold_source_id": "paq-2021",
     "gold_page": 6,
     "evidence_quote": "As shown in Table 1, PAQ consists of 65M filtered QA pairs.6 This was obtained by extracting 165M answer spans and generating 279M unique questions before applying global filtering.",
@@ -3042,11 +3019,10 @@
         "matched_gold": null,
         "filter_compliant": null
       }
-    ]
+    ],
+    "strategy": "B"
   },
   {
-    "strategy": "B",
-    "filter_applied_in_search": null,
     "question_id": "q09",
     "split": "dev",
     "question_type": "condition_exception",
@@ -3147,11 +3123,10 @@
         "matched_gold": null,
         "filter_compliant": null
       }
-    ]
+    ],
+    "strategy": "B"
   },
   {
-    "strategy": "B",
-    "filter_applied_in_search": null,
     "question_id": "q10",
     "split": "dev",
     "question_type": "condition_exception",
@@ -3252,11 +3227,10 @@
         "matched_gold": null,
         "filter_compliant": null
       }
-    ]
+    ],
+    "strategy": "B"
   },
   {
-    "strategy": "B",
-    "filter_applied_in_search": null,
     "question_id": "q11",
     "split": "dev",
     "question_type": "paraphrase",
@@ -3363,11 +3337,10 @@
         "matched_gold": null,
         "filter_compliant": null
       }
-    ]
+    ],
+    "strategy": "B"
   },
   {
-    "strategy": "B",
-    "filter_applied_in_search": null,
     "question_id": "q12",
     "split": "dev",
     "question_type": "metadata_filter",
@@ -3375,7 +3348,7 @@
     "expected_answer": "TF-IDF achieves 26.7 (Reddit), 10.9 (OpenSubtitles), 51.8 (AmazonQA); BM25 achieves 27.6, 10.9, 52.3; POLYAI-ENCODER achieves 61.3, 30.6, and 84.2.",
     "gold_source_id": "reddit-2019",
     "gold_page": 6,
-    "evidence_quote": "Reddit OpenSubtitles AmazonQA\nTF-IDF 26.7 10.9 51.8\nBM25 27.6 10.9 52.3",
+    "evidence_quote": "Reddit OpenSubtitles AmazonQA\nTF-IDF 26.7 10.9 51.8\nBM25 27.6 10.9 52.3\nUSE -SIM 36.6 13.6 47.6\nUSE -MAP 40.8 15.8 54.4\nUSE -LARGE -SIM 41.4 14.9 51.3\nUSE -LARGE -MAP 47.7 18.0 61.9\nELMO -SIM 12.5 9.5 16.0\nELMO -MAP 19.3 12.3 33.0\nBERT-SMALL -SIM 17.1 13.8 27.8\nBERT-SMALL -MAP 24.5 17.5 45.8\nBERT-LARGE -SIM 14.8 12.2 25.9\nBERT-LARGE -MAP 24.0 16.8 44.1\nPOLYAI-ENCODER 61.3 30.6 84.2",
     "alternative_gold": [],
     "filter": {
       "year": 2019,
@@ -3471,11 +3444,10 @@
         "matched_gold": null,
         "filter_compliant": true
       }
-    ]
+    ],
+    "strategy": "B"
   },
   {
-    "strategy": "B",
-    "filter_applied_in_search": null,
     "question_id": "q13",
     "split": "dev",
     "question_type": "metadata_filter",
@@ -3579,16 +3551,15 @@
         "matched_gold": null,
         "filter_compliant": true
       }
-    ]
+    ],
+    "strategy": "B"
   },
   {
-    "strategy": "B",
-    "filter_applied_in_search": null,
     "question_id": "q14",
     "split": "dev",
     "question_type": "metadata_filter",
     "question": "For the summarization dataset published in 2018, how were articles with only bold lines filtered out, and how many articles and summaries remained in the final dataset?",
-    "expected_answer": "A size threshold was used to remove pairs where the summary was longer than the article size, leaving a final dataset of 204,004 articles and their summaries (from 230,843 generated pairs).",
+    "expected_answer": "A size threshold was used to remove pairs where the summary was longer than the article size, leaving a final dataset of 204,004 articles and their summaries.",
     "gold_source_id": "wikihow-2018",
     "gold_page": 3,
     "evidence_quote": "To filter out these articles, we used a size threshold so that pairs with summaries longer than the article size will be removed. The final dataset is made of 204, 004 articles and their summaries.",
@@ -3687,11 +3658,10 @@
         "matched_gold": null,
         "filter_compliant": true
       }
-    ]
+    ],
+    "strategy": "B"
   },
   {
-    "strategy": "B",
-    "filter_applied_in_search": null,
     "question_id": "q15",
     "split": "dev",
     "question_type": "direct",
@@ -3792,20 +3762,25 @@
         "matched_gold": null,
         "filter_compliant": null
       }
-    ]
+    ],
+    "strategy": "B"
   },
   {
-    "strategy": "B",
-    "filter_applied_in_search": null,
     "question_id": "q16",
     "split": "test",
     "question_type": "direct",
     "question": "When evaluating extrinsic utility on the ELI5 dataset, what scores did T5-small and T5-11B trained only on GOOAQ achieve compared to the same models trained on ELI5?",
-    "expected_answer": "T5-small and T5-11B trained on GOOAQ (no ELI5) achieved 21.7 (or 21.8 in text) and 22.9 respectively, outperforming T5-small (19.0) and T5-11B (22.7) trained on ELI5.",
+    "expected_answer": "T5-small and T5-11B trained on GOOAQ (no ELI5) achieved 21.7 (21.8 in the prose summary) and 22.9 respectively, outperforming T5-small (19.0) and T5-11B (22.7) trained on ELI5.",
     "gold_source_id": "gooaq-2021",
     "gold_page": 8,
     "evidence_quote": "T5-small G OOAQ (no ELI5) no 21.7\nT5-11B G OOAQ (no ELI5) no 22.9\nT5-small ELI5 no 19.0\nT5-11B ELI5 no 22.7",
-    "alternative_gold": [],
+    "alternative_gold": [
+      {
+        "gold_source_id": "gooaq-2021",
+        "gold_page": 8,
+        "evidence_quote": "Our evaluation, summarized in Table 3, shows that both our small and 11B T5 models trained on GOOAQ’s snippet-answer subset (no training on ELI5) perform quite well (21.8 and 22.9, respectively) when evaluated on ELI5. They are even better than the same architectures trained with ELI5’s own training data (19.0 and 22.7, resp.)"
+      }
+    ],
     "filter": null,
     "hit_at_1": true,
     "evidence_hit_at_3": true,
@@ -3897,11 +3872,10 @@
         "matched_gold": null,
         "filter_compliant": null
       }
-    ]
+    ],
+    "strategy": "B"
   },
   {
-    "strategy": "B",
-    "filter_applied_in_search": null,
     "question_id": "q17",
     "split": "test",
     "question_type": "paraphrase",
@@ -4008,16 +3982,15 @@
         "matched_gold": null,
         "filter_compliant": null
       }
-    ]
+    ],
+    "strategy": "B"
   },
   {
-    "strategy": "B",
-    "filter_applied_in_search": null,
     "question_id": "q18",
     "split": "test",
     "question_type": "metadata_filter",
     "question": "In the 2019 dialogue dataset repository, how many comments, conversation threads, and total TensorFlow examples are included in the Reddit dataset from 2015 to 2018?",
-    "expected_answer": "The Reddit data from 2015 to 2018 consists of 3,680,746,776 comments in 256,095,216 threads, creating 727,013,715 TensorFlow examples (split into 654,396,778 train and 72,616,937 test).",
+    "expected_answer": "The Reddit data from 2015 to 2018 inclusive consists of 3,680,746,776 comments in 256,095,216 threads, creating 727,013,715 TensorFlow examples in total.",
     "gold_source_id": "reddit-2019",
     "gold_page": 3,
     "evidence_quote": "The data from 2015 to 2018 inclusive consists of 3,680,746,776 comments, in 256,095,216 threads. In total, 727,013,715 Tensorflow examples are created from this data.",
@@ -4116,24 +4089,23 @@
         "matched_gold": null,
         "filter_compliant": true
       }
-    ]
+    ],
+    "strategy": "B"
   },
   {
-    "strategy": "B",
-    "filter_applied_in_search": null,
     "question_id": "q19",
     "split": "test",
     "question_type": "condition_exception",
     "question": "During the cleaning of SearchQA snippets, what specific terms or attributes caused a snippet to be removed so answers could not be found trivially, and what maximum answer length was retained?",
-    "expected_answer": "Snippets were removed if they included the air-date of the Jeopardy! episode, the exact copy of the question, or the terms 'Jeopardy!', 'quiz', or 'trivia'; only tuples with answers of three words or less were kept.",
+    "expected_answer": "Snippets were removed if they included the air-date of the Jeopardy! episode, the exact copy of the question, or the terms 'Jeopardy!', 'quiz', or 'trivia'; only tuples whose answers were three or less words long were kept.",
     "gold_source_id": "searchqa-2017",
     "gold_page": 2,
-    "evidence_quote": "First, we removed any snippet returned that included the air-date of the Jeopardy! episode, the exact copy of the question,",
+    "evidence_quote": "First, we removed any snippet returned that included the air-date of the Jeopardy! episode, the exact copy of the question,\n1 The dataset can be found athttps://github.com/\nnyu-dl/SearchQA.\n2http://j-archive.com\nFigure 1: One example in .json format.\nor a term “Jeopardy!”, “quiz” or “trivia”, to ensure that the answer could not be found trivially by a process of word/phrase matching. Furthermore, we manually checked any URL, from which these removed snippets were taken, that occurs more than 50 times and removed any that explicitly contains Jeopardy! question-answer pairs.\nAmong the remaining question-answer-context tuples, we removed any tuple whose context did not include the answer. This was done mainly for computational efficiency in building a questionanswering system using the proposed dataset. We kept only those tuples whose answers were three or less words long.",
     "alternative_gold": [
       {
         "gold_source_id": "searchqa-2017",
         "gold_page": 2,
-        "evidence_quote": "or a term “Jeopardy!”, “quiz” or “trivia”, to ensure that the answer could not be found trivially by a process of word/phrase matching."
+        "evidence_quote": "or a term “Jeopardy!”, “quiz” or “trivia”, to ensure that the answer could not be found trivially by a process of word/phrase matching.\nWe kept only those tuples whose answers were three or less words long."
       }
     ],
     "filter": null,
@@ -4227,19 +4199,18 @@
         "matched_gold": null,
         "filter_compliant": null
       }
-    ]
+    ],
+    "strategy": "B"
   },
   {
-    "strategy": "B",
-    "filter_applied_in_search": null,
     "question_id": "q20",
     "split": "test",
     "question_type": "metadata_filter",
     "question": "In the 2018 text summarization paper, why does the Lead-3 baseline perform much better on CNN/Daily Mail than on WikiHow, and what ROUGE-L score does Pointer-generator + coverage achieve on WikiHow?",
-    "expected_answer": "News articles in CNN/Daily Mail follow the journalistic Inverted Pyramid style where the opening sentences contain the most important information, whereas WikiHow articles describe procedural steps of similar importance throughout; Pointer-generator + coverage achieves 26.54 ROUGE-L on WikiHow.",
+    "expected_answer": "Summarization baselines perform much better on CNN/Daily Mail with Lead-3 outperforming other baselines due to the news inverted pyramid writing style, whereas poor Lead-3 performance on WikiHow reflects the different writing styles in its articles; Pointer-generator + coverage achieves 26.54 ROUGE-L on WikiHow.",
     "gold_source_id": "wikihow-2018",
     "gold_page": 4,
-    "evidence_quote": "Pointer-generator + coverage 39.53 17.28 36.38 17.32 28.53 9.23 26.54 10.56",
+    "evidence_quote": "Pointer-generator + coverage 39.53 17.28 36.38 17.32 28.53 9.23 26.54 10.56\nLead-3 baseline 40.34 17.70 36.57 20.48 26.00 7.24 24.25 12.85",
     "alternative_gold": [],
     "filter": {
       "year": 2018,
@@ -4275,7 +4246,7 @@
         "source_page_match": true,
         "evidence_hit": false,
         "partial_evidence_on_gold_page": false,
-        "evidence_token_coverage_on_gold_page": 0.0,
+        "evidence_token_coverage_on_gold_page": 0.095,
         "matched_gold": null,
         "filter_compliant": true
       },
@@ -4335,11 +4306,10 @@
         "matched_gold": null,
         "filter_compliant": true
       }
-    ]
+    ],
+    "strategy": "B"
   },
   {
-    "strategy": "C",
-    "filter_applied_in_search": null,
     "question_id": "q01",
     "split": "dev",
     "question_type": "direct",
@@ -4446,11 +4416,10 @@
         "matched_gold": null,
         "filter_compliant": null
       }
-    ]
+    ],
+    "strategy": "C"
   },
   {
-    "strategy": "C",
-    "filter_applied_in_search": null,
     "question_id": "q02",
     "split": "dev",
     "question_type": "condition_exception",
@@ -4551,11 +4520,10 @@
         "matched_gold": null,
         "filter_compliant": null
       }
-    ]
+    ],
+    "strategy": "C"
   },
   {
-    "strategy": "C",
-    "filter_applied_in_search": null,
     "question_id": "q03",
     "split": "dev",
     "question_type": "condition_exception",
@@ -4563,7 +4531,7 @@
     "expected_answer": "Workers had to be based in a predominantly native English-speaking country (USA, Canada, UK, Australia), have completed at least 5000 HITs with >= 99% approval rate, and pass a qualification test of half-a-dozen questions.",
     "gold_source_id": "gooaq-2021",
     "gold_page": 4,
-    "evidence_quote": "we required workers to be based in a country with a population predominantly of native English speakers (e.g., USA, Canada, UK, and Australia) and have completed at least 5000 HITs with ≥ 99% assignment approval rate.",
+    "evidence_quote": "we required workers to be based in a country with a population predominantly of native English speakers (e.g., USA, Canada, UK, and Australia) and have completed at least 5000 HITs with ≥ 99% assignment approval rate. Additionally, we have a qualification test with half-a-dozen questions all of which need to be answered correctly by our annotators.",
     "alternative_gold": [],
     "filter": null,
     "hit_at_1": false,
@@ -4596,7 +4564,7 @@
         "source_page_match": true,
         "evidence_hit": false,
         "partial_evidence_on_gold_page": false,
-        "evidence_token_coverage_on_gold_page": 0.273,
+        "evidence_token_coverage_on_gold_page": 0.321,
         "matched_gold": null,
         "filter_compliant": null
       },
@@ -4652,15 +4620,14 @@
         "source_page_match": true,
         "evidence_hit": false,
         "partial_evidence_on_gold_page": false,
-        "evidence_token_coverage_on_gold_page": 0.333,
+        "evidence_token_coverage_on_gold_page": 0.396,
         "matched_gold": null,
         "filter_compliant": null
       }
-    ]
+    ],
+    "strategy": "C"
   },
   {
-    "strategy": "C",
-    "filter_applied_in_search": null,
     "question_id": "q04",
     "split": "dev",
     "question_type": "paraphrase",
@@ -4668,7 +4635,7 @@
     "expected_answer": "They selected the training instances most dissimilar to the evaluation splits, measuring similarity by the maximum token-overlap with any dev/test instance over both questions and answers.",
     "gold_source_id": "gooaq-2021",
     "gold_page": 5,
-    "evidence_quote": "To minimize this issue, we create training splits by selecting the most dissimilar instances to our evaluation splits. The measure of similarity for each training instance is computed as the maximum amount of tokenoverlap with any of the instances in the test/dev set",
+    "evidence_quote": "To minimize this issue, we create training splits by selecting the most dissimilar instances to our evaluation splits. The measure of similarity for each training instance is computed as the maximum amount of tokenoverlap with any of the instances in the test/dev set (computed over both questions and answers).",
     "alternative_gold": [],
     "filter": null,
     "hit_at_1": false,
@@ -4761,11 +4728,10 @@
         "matched_gold": null,
         "filter_compliant": null
       }
-    ]
+    ],
+    "strategy": "C"
   },
   {
-    "strategy": "C",
-    "filter_applied_in_search": null,
     "question_id": "q05",
     "split": "dev",
     "question_type": "direct",
@@ -4866,11 +4832,10 @@
         "matched_gold": null,
         "filter_compliant": null
       }
-    ]
+    ],
+    "strategy": "C"
   },
   {
-    "strategy": "C",
-    "filter_applied_in_search": null,
     "question_id": "q06",
     "split": "dev",
     "question_type": "paraphrase",
@@ -4971,11 +4936,10 @@
         "matched_gold": null,
         "filter_compliant": null
       }
-    ]
+    ],
+    "strategy": "C"
   },
   {
-    "strategy": "C",
-    "filter_applied_in_search": null,
     "question_id": "q07",
     "split": "dev",
     "question_type": "condition_exception",
@@ -5024,7 +4988,7 @@
         "rank": 2,
         "chunk_id": "C:paq-2021:p07:c003",
         "text": "comparison to recent state-of-the-art\nsystems. Highest score indicated in bold, highest non-retrieve-and-read model underlined.\n\n5.2.1 Ablating PAQ using RePAQ\nTable 4 shows RePAQ’s accuracy when using different PAQ variants. To establish the effect of filtering,\nwe evaluate RePAQ with unfiltered, locally-filtered\nand globally-filtered QA-pairs on PAQL,1. Comparing rows 2, 3 and 4 shows that global filtering is\ncrucial, leading to a 9% and 14% improvement over\nlocally-filtered and unfiltered datasets respectively.\n\nWe also note a general trend in Table 4 that\nadding more globally-filtered questions improves\naccuracy. Rows 4 and 5 show that using four questions per answer span is better than generating one\n(+0.9%), and Rows 5,6 and 7 show that combining PAQN E and PAQL results in a further 1.2%\nimprovement. Empirically we did not observe any\ncases where increasing the number of globally filtered QA-pairs reduced accuracy, even when there\nwere millions of QA-pairs already.",
-        "score": 0.845755,
+        "score": 0.845754,
         "metadata": {
           "title": "PAQ: 65 Million Probably-Asked Questions and What You Can Do With Them",
           "year": 2021,
@@ -5076,16 +5040,15 @@
         "matched_gold": "paq-2021:p04",
         "filter_compliant": null
       }
-    ]
+    ],
+    "strategy": "C"
   },
   {
-    "strategy": "C",
-    "filter_applied_in_search": null,
     "question_id": "q08",
     "split": "dev",
     "question_type": "direct",
     "question": "How many filtered QA-pairs are in the final PAQ knowledge base, and from how many extracted answer spans and unique generated questions were they obtained?",
-    "expected_answer": "PAQ consists of 65M (64.9M) filtered QA-pairs, obtained from 165M (165.7M) extracted answer spans and 279M (279.2M) unique questions before global filtering.",
+    "expected_answer": "PAQ consists of 65M filtered QA-pairs, obtained from 165M extracted answer spans and 279M unique questions before applying global filtering.",
     "gold_source_id": "paq-2021",
     "gold_page": 6,
     "evidence_quote": "As shown in Table 1, PAQ consists of 65M filtered QA pairs.6 This was obtained by extracting 165M answer spans and generating 279M unique questions before applying global filtering.",
@@ -5181,11 +5144,10 @@
         "matched_gold": null,
         "filter_compliant": null
       }
-    ]
+    ],
+    "strategy": "C"
   },
   {
-    "strategy": "C",
-    "filter_applied_in_search": null,
     "question_id": "q09",
     "split": "dev",
     "question_type": "condition_exception",
@@ -5286,11 +5248,10 @@
         "matched_gold": null,
         "filter_compliant": null
       }
-    ]
+    ],
+    "strategy": "C"
   },
   {
-    "strategy": "C",
-    "filter_applied_in_search": null,
     "question_id": "q10",
     "split": "dev",
     "question_type": "condition_exception",
@@ -5391,11 +5352,10 @@
         "matched_gold": null,
         "filter_compliant": null
       }
-    ]
+    ],
+    "strategy": "C"
   },
   {
-    "strategy": "C",
-    "filter_applied_in_search": null,
     "question_id": "q11",
     "split": "dev",
     "question_type": "paraphrase",
@@ -5502,14 +5462,10 @@
         "matched_gold": null,
         "filter_compliant": null
       }
-    ]
+    ],
+    "strategy": "C"
   },
   {
-    "strategy": "C",
-    "filter_applied_in_search": {
-      "year": 2019,
-      "task_domain": "dialogue"
-    },
     "question_id": "q12",
     "split": "dev",
     "question_type": "metadata_filter",
@@ -5517,7 +5473,7 @@
     "expected_answer": "TF-IDF achieves 26.7 (Reddit), 10.9 (OpenSubtitles), 51.8 (AmazonQA); BM25 achieves 27.6, 10.9, 52.3; POLYAI-ENCODER achieves 61.3, 30.6, and 84.2.",
     "gold_source_id": "reddit-2019",
     "gold_page": 6,
-    "evidence_quote": "Reddit OpenSubtitles AmazonQA\nTF-IDF 26.7 10.9 51.8\nBM25 27.6 10.9 52.3",
+    "evidence_quote": "Reddit OpenSubtitles AmazonQA\nTF-IDF 26.7 10.9 51.8\nBM25 27.6 10.9 52.3\nUSE -SIM 36.6 13.6 47.6\nUSE -MAP 40.8 15.8 54.4\nUSE -LARGE -SIM 41.4 14.9 51.3\nUSE -LARGE -MAP 47.7 18.0 61.9\nELMO -SIM 12.5 9.5 16.0\nELMO -MAP 19.3 12.3 33.0\nBERT-SMALL -SIM 17.1 13.8 27.8\nBERT-SMALL -MAP 24.5 17.5 45.8\nBERT-LARGE -SIM 14.8 12.2 25.9\nBERT-LARGE -MAP 24.0 16.8 44.1\nPOLYAI-ENCODER 61.3 30.6 84.2",
     "alternative_gold": [],
     "filter": {
       "year": 2019,
@@ -5613,14 +5569,10 @@
         "matched_gold": null,
         "filter_compliant": true
       }
-    ]
+    ],
+    "strategy": "C"
   },
   {
-    "strategy": "C",
-    "filter_applied_in_search": {
-      "year": 2017,
-      "task_domain": "question_answering"
-    },
     "question_id": "q13",
     "split": "dev",
     "question_type": "metadata_filter",
@@ -5724,19 +5676,15 @@
         "matched_gold": null,
         "filter_compliant": true
       }
-    ]
+    ],
+    "strategy": "C"
   },
   {
-    "strategy": "C",
-    "filter_applied_in_search": {
-      "year": 2018,
-      "task_domain": "summarization"
-    },
     "question_id": "q14",
     "split": "dev",
     "question_type": "metadata_filter",
     "question": "For the summarization dataset published in 2018, how were articles with only bold lines filtered out, and how many articles and summaries remained in the final dataset?",
-    "expected_answer": "A size threshold was used to remove pairs where the summary was longer than the article size, leaving a final dataset of 204,004 articles and their summaries (from 230,843 generated pairs).",
+    "expected_answer": "A size threshold was used to remove pairs where the summary was longer than the article size, leaving a final dataset of 204,004 articles and their summaries.",
     "gold_source_id": "wikihow-2018",
     "gold_page": 3,
     "evidence_quote": "To filter out these articles, we used a size threshold so that pairs with summaries longer than the article size will be removed. The final dataset is made of 204, 004 articles and their summaries.",
@@ -5835,11 +5783,10 @@
         "matched_gold": null,
         "filter_compliant": true
       }
-    ]
+    ],
+    "strategy": "C"
   },
   {
-    "strategy": "C",
-    "filter_applied_in_search": null,
     "question_id": "q15",
     "split": "dev",
     "question_type": "direct",
@@ -5940,20 +5887,25 @@
         "matched_gold": null,
         "filter_compliant": null
       }
-    ]
+    ],
+    "strategy": "C"
   },
   {
-    "strategy": "C",
-    "filter_applied_in_search": null,
     "question_id": "q16",
     "split": "test",
     "question_type": "direct",
     "question": "When evaluating extrinsic utility on the ELI5 dataset, what scores did T5-small and T5-11B trained only on GOOAQ achieve compared to the same models trained on ELI5?",
-    "expected_answer": "T5-small and T5-11B trained on GOOAQ (no ELI5) achieved 21.7 (or 21.8 in text) and 22.9 respectively, outperforming T5-small (19.0) and T5-11B (22.7) trained on ELI5.",
+    "expected_answer": "T5-small and T5-11B trained on GOOAQ (no ELI5) achieved 21.7 (21.8 in the prose summary) and 22.9 respectively, outperforming T5-small (19.0) and T5-11B (22.7) trained on ELI5.",
     "gold_source_id": "gooaq-2021",
     "gold_page": 8,
     "evidence_quote": "T5-small G OOAQ (no ELI5) no 21.7\nT5-11B G OOAQ (no ELI5) no 22.9\nT5-small ELI5 no 19.0\nT5-11B ELI5 no 22.7",
-    "alternative_gold": [],
+    "alternative_gold": [
+      {
+        "gold_source_id": "gooaq-2021",
+        "gold_page": 8,
+        "evidence_quote": "Our evaluation, summarized in Table 3, shows that both our small and 11B T5 models trained on GOOAQ’s snippet-answer subset (no training on ELI5) perform quite well (21.8 and 22.9, respectively) when evaluated on ELI5. They are even better than the same architectures trained with ELI5’s own training data (19.0 and 22.7, resp.)"
+      }
+    ],
     "filter": null,
     "hit_at_1": true,
     "evidence_hit_at_3": true,
@@ -6045,11 +5997,10 @@
         "matched_gold": null,
         "filter_compliant": null
       }
-    ]
+    ],
+    "strategy": "C"
   },
   {
-    "strategy": "C",
-    "filter_applied_in_search": null,
     "question_id": "q17",
     "split": "test",
     "question_type": "paraphrase",
@@ -6156,19 +6107,15 @@
         "matched_gold": null,
         "filter_compliant": null
       }
-    ]
+    ],
+    "strategy": "C"
   },
   {
-    "strategy": "C",
-    "filter_applied_in_search": {
-      "year": 2019,
-      "task_domain": "dialogue"
-    },
     "question_id": "q18",
     "split": "test",
     "question_type": "metadata_filter",
     "question": "In the 2019 dialogue dataset repository, how many comments, conversation threads, and total TensorFlow examples are included in the Reddit dataset from 2015 to 2018?",
-    "expected_answer": "The Reddit data from 2015 to 2018 consists of 3,680,746,776 comments in 256,095,216 threads, creating 727,013,715 TensorFlow examples (split into 654,396,778 train and 72,616,937 test).",
+    "expected_answer": "The Reddit data from 2015 to 2018 inclusive consists of 3,680,746,776 comments in 256,095,216 threads, creating 727,013,715 TensorFlow examples in total.",
     "gold_source_id": "reddit-2019",
     "gold_page": 3,
     "evidence_quote": "The data from 2015 to 2018 inclusive consists of 3,680,746,776 comments, in 256,095,216 threads. In total, 727,013,715 Tensorflow examples are created from this data.",
@@ -6267,24 +6214,23 @@
         "matched_gold": null,
         "filter_compliant": true
       }
-    ]
+    ],
+    "strategy": "C"
   },
   {
-    "strategy": "C",
-    "filter_applied_in_search": null,
     "question_id": "q19",
     "split": "test",
     "question_type": "condition_exception",
     "question": "During the cleaning of SearchQA snippets, what specific terms or attributes caused a snippet to be removed so answers could not be found trivially, and what maximum answer length was retained?",
-    "expected_answer": "Snippets were removed if they included the air-date of the Jeopardy! episode, the exact copy of the question, or the terms 'Jeopardy!', 'quiz', or 'trivia'; only tuples with answers of three words or less were kept.",
+    "expected_answer": "Snippets were removed if they included the air-date of the Jeopardy! episode, the exact copy of the question, or the terms 'Jeopardy!', 'quiz', or 'trivia'; only tuples whose answers were three or less words long were kept.",
     "gold_source_id": "searchqa-2017",
     "gold_page": 2,
-    "evidence_quote": "First, we removed any snippet returned that included the air-date of the Jeopardy! episode, the exact copy of the question,",
+    "evidence_quote": "First, we removed any snippet returned that included the air-date of the Jeopardy! episode, the exact copy of the question,\n1 The dataset can be found athttps://github.com/\nnyu-dl/SearchQA.\n2http://j-archive.com\nFigure 1: One example in .json format.\nor a term “Jeopardy!”, “quiz” or “trivia”, to ensure that the answer could not be found trivially by a process of word/phrase matching. Furthermore, we manually checked any URL, from which these removed snippets were taken, that occurs more than 50 times and removed any that explicitly contains Jeopardy! question-answer pairs.\nAmong the remaining question-answer-context tuples, we removed any tuple whose context did not include the answer. This was done mainly for computational efficiency in building a questionanswering system using the proposed dataset. We kept only those tuples whose answers were three or less words long.",
     "alternative_gold": [
       {
         "gold_source_id": "searchqa-2017",
         "gold_page": 2,
-        "evidence_quote": "or a term “Jeopardy!”, “quiz” or “trivia”, to ensure that the answer could not be found trivially by a process of word/phrase matching."
+        "evidence_quote": "or a term “Jeopardy!”, “quiz” or “trivia”, to ensure that the answer could not be found trivially by a process of word/phrase matching.\nWe kept only those tuples whose answers were three or less words long."
       }
     ],
     "filter": null,
@@ -6378,22 +6324,18 @@
         "matched_gold": null,
         "filter_compliant": null
       }
-    ]
+    ],
+    "strategy": "C"
   },
   {
-    "strategy": "C",
-    "filter_applied_in_search": {
-      "year": 2018,
-      "task_domain": "summarization"
-    },
     "question_id": "q20",
     "split": "test",
     "question_type": "metadata_filter",
     "question": "In the 2018 text summarization paper, why does the Lead-3 baseline perform much better on CNN/Daily Mail than on WikiHow, and what ROUGE-L score does Pointer-generator + coverage achieve on WikiHow?",
-    "expected_answer": "News articles in CNN/Daily Mail follow the journalistic Inverted Pyramid style where the opening sentences contain the most important information, whereas WikiHow articles describe procedural steps of similar importance throughout; Pointer-generator + coverage achieves 26.54 ROUGE-L on WikiHow.",
+    "expected_answer": "Summarization baselines perform much better on CNN/Daily Mail with Lead-3 outperforming other baselines due to the news inverted pyramid writing style, whereas poor Lead-3 performance on WikiHow reflects the different writing styles in its articles; Pointer-generator + coverage achieves 26.54 ROUGE-L on WikiHow.",
     "gold_source_id": "wikihow-2018",
     "gold_page": 4,
-    "evidence_quote": "Pointer-generator + coverage 39.53 17.28 36.38 17.32 28.53 9.23 26.54 10.56",
+    "evidence_quote": "Pointer-generator + coverage 39.53 17.28 36.38 17.32 28.53 9.23 26.54 10.56\nLead-3 baseline 40.34 17.70 36.57 20.48 26.00 7.24 24.25 12.85",
     "alternative_gold": [],
     "filter": {
       "year": 2018,
@@ -6429,7 +6371,7 @@
         "source_page_match": true,
         "evidence_hit": false,
         "partial_evidence_on_gold_page": false,
-        "evidence_token_coverage_on_gold_page": 0.0,
+        "evidence_token_coverage_on_gold_page": 0.095,
         "matched_gold": null,
         "filter_compliant": true
       },
@@ -6489,6 +6431,7 @@
         "matched_gold": null,
         "filter_compliant": true
       }
-    ]
+    ],
+    "strategy": "C"
   }
 ]
