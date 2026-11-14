@@ -64,8 +64,10 @@ def evaluate_query(question: dict[str, Any], hits: list[dict[str, Any]]) -> dict
         )
 
     q_filter = question.get("filter")
+    supporting_quote = question.get("supporting_page_quote")
     annotated_hits: list[dict[str, Any]] = []
     partial_on_gold_page = 0
+    supporting_hit_in_top3 = False
 
     for h in hits[:3]:
         meta = h.get("metadata", {})
@@ -76,6 +78,7 @@ def evaluate_query(question: dict[str, Any], hits: list[dict[str, Any]]) -> dict
         is_source_page_match = False
         is_evidence_hit = False
         is_partial_evidence = False
+        is_supporting_quote_hit = False
         best_cov = 0.0
         matched_gold_info = None
 
@@ -92,6 +95,17 @@ def evaluate_query(question: dict[str, Any], hits: list[dict[str, Any]]) -> dict
                 if part_ok:
                     is_partial_evidence = True
 
+        if supporting_quote and doc_id == question["gold_source_id"] and page_no == int(question["gold_page"]):
+            supp_full, supp_part, supp_cov = _chunk_matches_evidence(text, supporting_quote)
+            if supp_full:
+                is_supporting_quote_hit = True
+                supporting_hit_in_top3 = True
+                is_partial_evidence = True
+                if supp_cov > best_cov:
+                    best_cov = supp_cov
+            elif supp_part:
+                is_partial_evidence = True
+
         if is_partial_evidence and not is_evidence_hit:
             partial_on_gold_page += 1
 
@@ -99,22 +113,35 @@ def evaluate_query(question: dict[str, Any], hits: list[dict[str, Any]]) -> dict
         if q_filter:
             filter_compliant = all(meta.get(fk) == fv for fk, fv in q_filter.items())
 
-        annotated_hits.append(
-            {
-                **h,
-                "source_page_match": is_source_page_match,
-                "evidence_hit": is_evidence_hit,
-                "partial_evidence_on_gold_page": is_partial_evidence and not is_evidence_hit,
-                "evidence_token_coverage_on_gold_page": best_cov,
-                "matched_gold": matched_gold_info,
-                "filter_compliant": filter_compliant,
-            }
-        )
+        hit_record = {
+            **h,
+            "source_page_match": is_source_page_match,
+            "evidence_hit": is_evidence_hit,
+            "partial_evidence_on_gold_page": is_partial_evidence and not is_evidence_hit,
+            "evidence_token_coverage_on_gold_page": best_cov,
+            "matched_gold": matched_gold_info,
+            "filter_compliant": filter_compliant,
+        }
+        if supporting_quote:
+            hit_record["supporting_quote_hit"] = is_supporting_quote_hit
+        annotated_hits.append(hit_record)
 
-    hit_at_1 = bool(annotated_hits and annotated_hits[0]["evidence_hit"])
-    hit_at_3 = any(item["evidence_hit"] for item in annotated_hits[:3])
+    primary_hit_at_1 = bool(annotated_hits and annotated_hits[0]["evidence_hit"])
+    if supporting_quote:
+        hit_at_1 = bool(
+            annotated_hits
+            and annotated_hits[0]["evidence_hit"]
+            and annotated_hits[0].get("supporting_quote_hit")
+        )
+        hit_at_3 = any(item["evidence_hit"] for item in annotated_hits[:3]) and supporting_hit_in_top3
+    else:
+        hit_at_1 = primary_hit_at_1
+        hit_at_3 = any(item["evidence_hit"] for item in annotated_hits[:3])
+
     page_hit_at_3 = any(item["source_page_match"] for item in annotated_hits[:3])
-    evidence_split_across_chunks = (not hit_at_3) and (partial_on_gold_page >= 1)
+    evidence_split_across_chunks = (not hit_at_3) and (
+        partial_on_gold_page >= 1 or any(item["evidence_hit"] for item in annotated_hits[:3])
+    )
 
     filter_top3_compliant = None
     if q_filter:
@@ -122,7 +149,7 @@ def evaluate_query(question: dict[str, Any], hits: list[dict[str, Any]]) -> dict
             bool(item["filter_compliant"]) for item in annotated_hits[:3]
         )
 
-    return {
+    result = {
         "question_id": question["id"],
         "split": question["split"],
         "question_type": question.get("type", "general"),
@@ -140,6 +167,9 @@ def evaluate_query(question: dict[str, Any], hits: list[dict[str, Any]]) -> dict
         "filter_top3_compliant": filter_top3_compliant,
         "top_3_hits": annotated_hits,
     }
+    if supporting_quote:
+        result["supporting_page_quote"] = supporting_quote
+    return result
 
 
 def summarize(traces: list[dict[str, Any]]) -> dict[str, Any]:

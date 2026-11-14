@@ -2091,7 +2091,7 @@
     "hit_at_1": false,
     "evidence_hit_at_3": false,
     "gold_page_retrieved_in_top3": true,
-    "evidence_split_error": false,
+    "evidence_split_error": true,
     "filter_top3_compliant": true,
     "top_3_hits": [
       {
@@ -2118,10 +2118,11 @@
         },
         "source_page_match": true,
         "evidence_hit": false,
-        "partial_evidence_on_gold_page": false,
-        "evidence_token_coverage_on_gold_page": 0.095,
+        "partial_evidence_on_gold_page": true,
+        "evidence_token_coverage_on_gold_page": 0.963,
         "matched_gold": null,
-        "filter_compliant": true
+        "filter_compliant": true,
+        "supporting_quote_hit": true
       },
       {
         "rank": 2,
@@ -2147,10 +2148,11 @@
         },
         "source_page_match": true,
         "evidence_hit": false,
-        "partial_evidence_on_gold_page": false,
+        "partial_evidence_on_gold_page": true,
         "evidence_token_coverage_on_gold_page": 0.048,
         "matched_gold": null,
-        "filter_compliant": true
+        "filter_compliant": true,
+        "supporting_quote_hit": false
       },
       {
         "rank": 3,
@@ -2179,9 +2181,11 @@
         "partial_evidence_on_gold_page": false,
         "evidence_token_coverage_on_gold_page": 0.0,
         "matched_gold": null,
-        "filter_compliant": true
+        "filter_compliant": true,
+        "supporting_quote_hit": false
       }
     ],
+    "supporting_page_quote": "As it can be seen, the summarization systems perform a lot better on CNN/Daily mail compared to the WikiHow dataset with lead-3 outperforming other baselines due to the news inverted pyramid writing style described earlier. On the other hand, the poor performance of lead-3 on WikiHow shows the different writing styles in its articles.",
     "strategy": "A"
   },
   {
@@ -4245,10 +4249,11 @@
         },
         "source_page_match": true,
         "evidence_hit": false,
-        "partial_evidence_on_gold_page": false,
-        "evidence_token_coverage_on_gold_page": 0.095,
+        "partial_evidence_on_gold_page": true,
+        "evidence_token_coverage_on_gold_page": 1.0,
         "matched_gold": null,
-        "filter_compliant": true
+        "filter_compliant": true,
+        "supporting_quote_hit": true
       },
       {
         "rank": 2,
@@ -4276,7 +4281,8 @@
         "partial_evidence_on_gold_page": false,
         "evidence_token_coverage_on_gold_page": 1.0,
         "matched_gold": "wikihow-2018:p04",
-        "filter_compliant": true
+        "filter_compliant": true,
+        "supporting_quote_hit": false
       },
       {
         "rank": 3,
@@ -4304,9 +4310,11 @@
         "partial_evidence_on_gold_page": false,
         "evidence_token_coverage_on_gold_page": 0.0,
         "matched_gold": null,
-        "filter_compliant": true
+        "filter_compliant": true,
+        "supporting_quote_hit": false
       }
     ],
+    "supporting_page_quote": "As it can be seen, the summarization systems perform a lot better on CNN/Daily mail compared to the WikiHow dataset with lead-3 outperforming other baselines due to the news inverted pyramid writing style described earlier. On the other hand, the poor performance of lead-3 on WikiHow shows the different writing styles in its articles.",
     "strategy": "B"
   },
   {
@@ -6370,10 +6378,11 @@
         },
         "source_page_match": true,
         "evidence_hit": false,
-        "partial_evidence_on_gold_page": false,
-        "evidence_token_coverage_on_gold_page": 0.095,
+        "partial_evidence_on_gold_page": true,
+        "evidence_token_coverage_on_gold_page": 1.0,
         "matched_gold": null,
-        "filter_compliant": true
+        "filter_compliant": true,
+        "supporting_quote_hit": true
       },
       {
         "rank": 2,
@@ -6401,7 +6410,8 @@
         "partial_evidence_on_gold_page": false,
         "evidence_token_coverage_on_gold_page": 1.0,
         "matched_gold": "wikihow-2018:p04",
-        "filter_compliant": true
+        "filter_compliant": true,
+        "supporting_quote_hit": false
       },
       {
         "rank": 3,
@@ -6429,9 +6439,11 @@
         "partial_evidence_on_gold_page": false,
         "evidence_token_coverage_on_gold_page": 0.0,
         "matched_gold": null,
-        "filter_compliant": true
+        "filter_compliant": true,
+        "supporting_quote_hit": false
       }
     ],
+    "supporting_page_quote": "As it can be seen, the summarization systems perform a lot better on CNN/Daily mail compared to the WikiHow dataset with lead-3 outperforming other baselines due to the news inverted pyramid writing style described earlier. On the other hand, the poor performance of lead-3 on WikiHow shows the different writing styles in its articles.",
     "strategy": "C"
   }
 ]

@@ -1,5 +1,5 @@
 {
-  "executed_at": "2026-11-14T15:37:25.874260+07:00",
+  "executed_at": "2026-11-14T23:26:59.311676+07:00",
   "environment": {
     "python_package_versions": {
       "qdrant_client": "1.20.0",
@@ -122,7 +122,7 @@
         "evidence_hit_at_3_fraction": "2/5",
         "evidence_hit_at_3_pct": 40.0,
         "gold_page_hit_at_3_fraction": "5/5",
-        "evidence_split_errors": 0,
+        "evidence_split_errors": 1,
         "filter_questions_count": 2,
         "filter_compliance_fraction": "2/2",
         "filter_compliance_pct": 100.0

@@ -60,7 +60,7 @@ Dùng cùng dữ liệu, model và câu hỏi cho cả ba cấu hình. Tách **1
 - **Báo cáo & Nhật ký**:
   - Thông tin học viên: [STUDENT.md](STUDENT.md)
   - Nhật ký thực nghiệm: [artifacts/experiment_log.csv](artifacts/experiment_log.csv)
-  - Báo cáo cá nhân: [report/individual/2A202603935_VuQuangHai.md](report/individual/2A202603935_VuQuangHai.md) (và [report/individual/MSSV_HoTen.md](report/individual/MSSV_HoTen.md))
+  - Báo cáo cá nhân chính thức: [report/individual/2A202603935_VuQuangHai.md](report/individual/2A202603935_VuQuangHai.md) (file [report/individual/MSSV_HoTen.md](report/individual/MSSV_HoTen.md) được giữ nguyên là file mẫu trống gốc của đề bài)
 
 ### Lệnh chạy tái lập (Windows PowerShell)
 ```powershell

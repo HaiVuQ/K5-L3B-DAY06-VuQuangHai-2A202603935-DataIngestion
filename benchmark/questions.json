@@ -2,6 +2,7 @@
   "benchmark_name": "Day 06 Data Ingestion Benchmark (all-MiniLM-L6-v2 Corpus)",
   "created_before_experiments_at": "2026-11-14T11:12:00+07:00",
   "selection_criteria_locked_before_test": "Select the strategy with the highest Dev Evidence Hit@3; break ties using Dev Hit@1, then manual Chunk Coherence score (/2), then Grounding Quality (/2), and finally lower chunk count / ingestion time.",
+  "tie_break_clarification_after_initial_run": "Clarified at 2026-11-14T17:38:00+07:00 after the initial run: because Grounding Quality (/2) is scored on the test split, a strict pre-test tie-break should only reference dev/corpus metrics (Dev Hit@1, manual Chunk Coherence score (/2), Dev Filter Compliance, and lower chunk count / ingestion time) rather than test Grounding. Because Strategy A won outright on the primary criterion (Dev Evidence Hit@3 = 8/15 vs. 6/15 for B and C) with no tie, the tie-break clause was never triggered and the selection of Strategy A is unaffected.",
   "split_summary": {
     "total_questions": 20,
     "dev_count": 15,
